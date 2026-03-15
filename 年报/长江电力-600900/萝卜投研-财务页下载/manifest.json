@@ -1,0 +1,192 @@
+[
+  {
+    "slug": "financial_summary_full_periods",
+    "kind": "json",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/600900",
+    "params": {
+      "reportType": "SUMMARY",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left"
+    },
+    "path": "raw/financial_summary_full_periods.json"
+  },
+  {
+    "slug": "balance_sheet_full_periods",
+    "kind": "json",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/600900",
+    "params": {
+      "reportType": "BS",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left"
+    },
+    "path": "raw/balance_sheet_full_periods.json"
+  },
+  {
+    "slug": "income_statement_full_periods",
+    "kind": "json",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/600900",
+    "params": {
+      "reportType": "IS",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left"
+    },
+    "path": "raw/income_statement_full_periods.json"
+  },
+  {
+    "slug": "cashflow_full_periods",
+    "kind": "json",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/600900",
+    "params": {
+      "reportType": "CF",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left"
+    },
+    "path": "raw/cashflow_full_periods.json"
+  },
+  {
+    "slug": "key_finance_indicators_full_periods",
+    "kind": "json",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/600900",
+    "params": {
+      "reportType": "MZ",
+      "ticker": "600900",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left"
+    },
+    "path": "raw/key_finance_indicators_full_periods.json"
+  },
+  {
+    "slug": "main_composition_full_periods",
+    "kind": "json",
+    "url": "https://gw.datayes.com/rrp_adventure/web/mainComposition/600900",
+    "params": {
+      "reportName": "MC",
+      "reportType": "A,S1",
+      "period": "30",
+      "includeLatest": "true",
+      "duration": "accumulate",
+      "isHideEmptyData": "true",
+      "unit": "3",
+      "decimalPoint": "2",
+      "order": "left",
+      "isStd": "true"
+    },
+    "path": "raw/main_composition_full_periods.json"
+  },
+  {
+    "slug": "balance_sheet_excel",
+    "kind": "excel",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/excel/600900",
+    "params": {
+      "reportType": "BS",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left",
+      "isHideEmptyData": "true",
+      "unit": "3",
+      "decimalPoint": "2"
+    },
+    "path": "excel/长江电力-资产负债表-全期间.xls",
+    "content_disposition": "attachment; filename=%E9%95%BF%E6%B1%9F%E7%94%B5%E5%8A%9B-%E8%B5%84%E4%BA%A7%E8%B4%9F%E5%80%BA%E8%A1%A8.xls",
+    "content_type": "",
+    "bytes": 142336
+  },
+  {
+    "slug": "income_statement_excel",
+    "kind": "excel",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/excel/600900",
+    "params": {
+      "reportType": "IS",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left",
+      "isHideEmptyData": "true",
+      "unit": "3",
+      "decimalPoint": "2"
+    },
+    "path": "excel/长江电力-利润表-全期间.xls",
+    "content_disposition": "attachment; filename=%E9%95%BF%E6%B1%9F%E7%94%B5%E5%8A%9B-%E5%88%A9%E6%B6%A6%E8%A1%A8.xls",
+    "content_type": "",
+    "bytes": 70144
+  },
+  {
+    "slug": "cashflow_excel",
+    "kind": "excel",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/excel/600900",
+    "params": {
+      "reportType": "CF",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left",
+      "isHideEmptyData": "true",
+      "unit": "3",
+      "decimalPoint": "2"
+    },
+    "path": "excel/长江电力-现金流量表-全期间.xls",
+    "content_disposition": "attachment; filename=%E9%95%BF%E6%B1%9F%E7%94%B5%E5%8A%9B-%E7%8E%B0%E9%87%91%E6%B5%81%E9%87%8F%E8%A1%A8.xls",
+    "content_type": "",
+    "bytes": 80896
+  },
+  {
+    "slug": "financial_summary_excel",
+    "kind": "excel",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/excel/600900",
+    "params": {
+      "reportType": "SUMMARY",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left",
+      "isHideEmptyData": "true",
+      "unit": "3",
+      "decimalPoint": "2"
+    },
+    "path": "excel/长江电力-财务摘要-全期间.xls",
+    "content_disposition": "attachment; filename=%E9%95%BF%E6%B1%9F%E7%94%B5%E5%8A%9B-%E8%B4%A2%E5%8A%A1%E6%91%98%E8%A6%81%E8%A1%A8.xls",
+    "content_type": "",
+    "bytes": 135168
+  },
+  {
+    "slug": "main_composition_excel",
+    "kind": "excel",
+    "url": "https://gw.datayes.com/rrp_adventure/web/mainComposition/excel/600900",
+    "params": {
+      "reportName": "MC",
+      "reportType": "A,S1",
+      "period": "30",
+      "includeLatest": "true",
+      "duration": "accumulate",
+      "isHideEmptyData": "true",
+      "unit": "3",
+      "decimalPoint": "2",
+      "order": "left",
+      "isStd": "true"
+    },
+    "path": "excel/长江电力-主营构成表-全期间.xls",
+    "content_disposition": "attachment; filename=%E9%95%BF%E6%B1%9F%E7%94%B5%E5%8A%9B-%E4%B8%BB%E8%90%A5%E6%9E%84%E6%88%90%E8%A1%A8.xls",
+    "content_type": "application/octet-stream;charset=UTF-8",
+    "bytes": 27136
+  }
+]
