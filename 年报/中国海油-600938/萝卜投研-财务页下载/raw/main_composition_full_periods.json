@@ -1,0 +1,1727 @@
+{
+  "code": 1,
+  "message": "success",
+  "data": {
+    "titleBar": [
+      {
+        "interval": "2025半年报",
+        "reportTypes": [
+          {
+            "name": "合并报表"
+          }
+        ],
+        "year": 2025,
+        "reportType": "S1"
+      },
+      {
+        "interval": "2024年报",
+        "reportTypes": [
+          {
+            "name": "合并报表"
+          }
+        ],
+        "year": 2024,
+        "reportType": "A"
+      },
+      {
+        "interval": "2024半年报",
+        "reportTypes": [
+          {
+            "name": "合并报表"
+          }
+        ],
+        "year": 2024,
+        "reportType": "S1"
+      },
+      {
+        "interval": "2023年报",
+        "reportTypes": [
+          {
+            "name": "合并报表"
+          }
+        ],
+        "year": 2023,
+        "reportType": "A"
+      },
+      {
+        "interval": "2023半年报",
+        "reportTypes": [
+          {
+            "name": "合并报表"
+          }
+        ],
+        "year": 2023,
+        "reportType": "S1"
+      },
+      {
+        "interval": "2022年报",
+        "reportTypes": [
+          {
+            "name": "合并报表"
+          }
+        ],
+        "year": 2022,
+        "reportType": "A"
+      },
+      {
+        "interval": "2022半年报",
+        "reportTypes": [
+          {
+            "name": "合并报表"
+          }
+        ],
+        "year": 2022,
+        "reportType": "S1"
+      },
+      {
+        "interval": "2021年报",
+        "reportTypes": [
+          {
+            "name": "合并报表"
+          }
+        ],
+        "year": 2021,
+        "reportType": "A"
+      },
+      {
+        "interval": "2021半年报",
+        "reportTypes": [
+          {
+            "name": "合并报表"
+          }
+        ],
+        "year": 2021,
+        "reportType": "S1"
+      },
+      {
+        "interval": "2020年报",
+        "reportTypes": [
+          {
+            "name": "合并报表"
+          }
+        ],
+        "year": 2020,
+        "reportType": "A"
+      },
+      {
+        "interval": "2019年报",
+        "reportTypes": [
+          {
+            "name": "合并报表"
+          }
+        ],
+        "year": 2019,
+        "reportType": "A"
+      },
+      {
+        "interval": "2018年报",
+        "reportTypes": [
+          {
+            "name": "合并报表"
+          }
+        ],
+        "year": 2018,
+        "reportType": "A"
+      }
+    ],
+    "data": [
+      {
+        "parentMenu": "营业总收入",
+        "childMenus": [
+          {
+            "menu": "产品",
+            "apiKey": "20",
+            "data": [
+              207608000000,
+              420506000000,
+              226770000000,
+              416609000000,
+              192064000000,
+              422230000000,
+              202355000000,
+              246111000000,
+              110233233800,
+              155373000000,
+              233198556200,
+              227710214800
+            ],
+            "isCompute": null,
+            "unit": null,
+            "fullName": null,
+            "childMenus": [
+              {
+                "menu": "贸易",
+                "apiKey": null,
+                "data": [
+                  31058000000,
+                  55142000000,
+                  36629000000,
+                  79308000000,
+                  35564000000,
+                  60433000000,
+                  21527000000,
+                  18084000000,
+                  6369960800,
+                  12131000000,
+                  30866853400,
+                  35830259200
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "油气销售",
+                "apiKey": null,
+                "data": [
+                  171745000000,
+                  355615000000,
+                  185112000000,
+                  327867000000,
+                  151686000000,
+                  352956000000,
+                  176681000000,
+                  222125000000,
+                  100625136100,
+                  139601000000,
+                  197172590400,
+                  186556556800
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "其他差额项目(计算)",
+                "apiKey": null,
+                "data": [
+                  4805000000,
+                  9749000000,
+                  5029000000,
+                  9434000000,
+                  4814000000,
+                  8841000000,
+                  4147000000,
+                  5902000000,
+                  3238136900,
+                  3641000000,
+                  5159112400,
+                  5323398800
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              }
+            ],
+            "tableID": null,
+            "announcementID": null,
+            "minus": null,
+            "sum": null,
+            "adjust": null,
+            "special": null,
+            "title": null,
+            "important": null
+          },
+          {
+            "menu": "地区",
+            "apiKey": "30",
+            "data": [
+              207608000000,
+              420506000000,
+              226770000000,
+              416609000000,
+              192064000000,
+              422230000000,
+              202355000000,
+              246111000000,
+              110233233800,
+              155373000000,
+              233198556200,
+              227710214800
+            ],
+            "isCompute": null,
+            "unit": null,
+            "fullName": null,
+            "childMenus": [
+              {
+                "menu": "中国大陆",
+                "apiKey": null,
+                "data": [
+                  130121000000,
+                  268065000000,
+                  140787000000,
+                  256779000000,
+                  120033000000,
+                  269956000000,
+                  137687000000,
+                  170412000000,
+                  79220501600,
+                  110977000000,
+                  150366868500,
+                  147861707000
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "港澳台及海外",
+                "apiKey": null,
+                "data": [
+                  72682000000,
+                  152441000000,
+                  85983000000,
+                  159830000000,
+                  72031000000,
+                  152274000000,
+                  64668000000,
+                  69797000000,
+                  31012732200,
+                  40755000000,
+                  82831687700,
+                  79848507800
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "其他差额项目(计算)",
+                "apiKey": null,
+                "data": [
+                  4805000000,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  5902000000,
+                  null,
+                  3641000000,
+                  null,
+                  null
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              }
+            ],
+            "tableID": null,
+            "announcementID": null,
+            "minus": null,
+            "sum": null,
+            "adjust": null,
+            "special": null,
+            "title": null,
+            "important": null
+          },
+          {
+            "menu": "行业",
+            "apiKey": "10",
+            "data": [
+              207608000000,
+              420506000000,
+              226770000000,
+              416609000000,
+              192064000000,
+              422230000000,
+              202355000000,
+              246111690600,
+              110233233800,
+              155372671400,
+              233198556200,
+              227710214800
+            ],
+            "isCompute": null,
+            "unit": null,
+            "fullName": null,
+            "childMenus": [
+              {
+                "menu": "贸易",
+                "apiKey": null,
+                "data": [
+                  31058000000,
+                  55142000000,
+                  36629000000,
+                  79308000000,
+                  35564000000,
+                  60433000000,
+                  21527000000,
+                  18084122100,
+                  6369960800,
+                  12131253800,
+                  30866853400,
+                  35830259200
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "油气销售",
+                "apiKey": null,
+                "data": [
+                  171745000000,
+                  355615000000,
+                  185112000000,
+                  327867000000,
+                  151686000000,
+                  352956000000,
+                  176681000000,
+                  222125399800,
+                  100625136100,
+                  139601209400,
+                  197172590400,
+                  186556556800
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "其他差额项目(计算)",
+                "apiKey": null,
+                "data": [
+                  4805000000,
+                  9749000000,
+                  5029000000,
+                  9434000000,
+                  4814000000,
+                  8841000000,
+                  4147000000,
+                  5902168700,
+                  3238136900,
+                  3640208200,
+                  5159112400,
+                  5323398800
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              }
+            ],
+            "tableID": null,
+            "announcementID": null,
+            "minus": null,
+            "sum": null,
+            "adjust": null,
+            "special": null,
+            "title": null,
+            "important": null
+          }
+        ],
+        "apiKey": "mainOperIncome",
+        "data": [
+          207608000000,
+          420506000000,
+          226770000000,
+          416609000000,
+          192064000000,
+          422230000000,
+          202355000000,
+          246111690600,
+          110233233800,
+          155372671400,
+          233198556200,
+          227710214800
+        ],
+        "compare": null
+      },
+      {
+        "parentMenu": "营业成本",
+        "childMenus": [
+          {
+            "menu": "产品",
+            "apiKey": "20",
+            "data": [
+              96602000000,
+              194993000000,
+              104962000000,
+              208794000000,
+              93583000000,
+              198223000000,
+              91238000000,
+              121585000000,
+              55733419600,
+              97381000000,
+              129383696600,
+              130041177300
+            ],
+            "isCompute": null,
+            "unit": null,
+            "fullName": null,
+            "childMenus": [
+              {
+                "menu": "贸易",
+                "apiKey": null,
+                "data": [
+                  27807000000,
+                  50035000000,
+                  33762000000,
+                  73950000000,
+                  32626000000,
+                  57383000000,
+                  20619000000,
+                  16641000000,
+                  6251297900,
+                  11671000000,
+                  29040054500,
+                  33558369200
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "油气销售",
+                "apiKey": null,
+                "data": [
+                  63822000000,
+                  133674000000,
+                  64740000000,
+                  125816000000,
+                  56246000000,
+                  131920000000,
+                  66158000000,
+                  99077000000,
+                  46743398300,
+                  81844000000,
+                  95359451400,
+                  90694161100
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "其他差额项目(计算)",
+                "apiKey": null,
+                "data": [
+                  4973000000,
+                  11284000000,
+                  6460000000,
+                  9028000000,
+                  4711000000,
+                  8920000000,
+                  4461000000,
+                  5867000000,
+                  2738723400,
+                  3866000000,
+                  4984190700,
+                  5788647000
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              }
+            ],
+            "tableID": null,
+            "announcementID": null,
+            "minus": null,
+            "sum": null,
+            "adjust": null,
+            "special": null,
+            "title": null,
+            "important": null
+          },
+          {
+            "menu": "地区",
+            "apiKey": "30",
+            "data": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "isCompute": null,
+            "unit": null,
+            "fullName": null,
+            "childMenus": [
+              {
+                "menu": "中国大陆",
+                "apiKey": null,
+                "data": [
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "港澳台及海外",
+                "apiKey": null,
+                "data": [
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "其他差额项目(计算)",
+                "apiKey": null,
+                "data": [
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              }
+            ],
+            "tableID": null,
+            "announcementID": null,
+            "minus": null,
+            "sum": null,
+            "adjust": null,
+            "special": null,
+            "title": null,
+            "important": null
+          },
+          {
+            "menu": "行业",
+            "apiKey": "10",
+            "data": [
+              96602000000,
+              194993000000,
+              104962000000,
+              208794000000,
+              93583000000,
+              198223000000,
+              91238000000,
+              121585438700,
+              55733419600,
+              97381353000,
+              129383696600,
+              130041177300
+            ],
+            "isCompute": null,
+            "unit": null,
+            "fullName": null,
+            "childMenus": [
+              {
+                "menu": "贸易",
+                "apiKey": null,
+                "data": [
+                  27807000000,
+                  50035000000,
+                  33762000000,
+                  73950000000,
+                  32626000000,
+                  57383000000,
+                  20619000000,
+                  16640475400,
+                  6251297900,
+                  11671313400,
+                  29040054500,
+                  33558369200
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "油气销售",
+                "apiKey": null,
+                "data": [
+                  63822000000,
+                  133674000000,
+                  64740000000,
+                  125816000000,
+                  56246000000,
+                  131920000000,
+                  66158000000,
+                  99078061800,
+                  46743398300,
+                  81844218800,
+                  95359451400,
+                  90694161100
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "其他差额项目(计算)",
+                "apiKey": null,
+                "data": [
+                  4973000000,
+                  11284000000,
+                  6460000000,
+                  9028000000,
+                  4711000000,
+                  8920000000,
+                  4461000000,
+                  5866901500,
+                  2738723400,
+                  3865820800,
+                  4984190700,
+                  5788647000
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              }
+            ],
+            "tableID": null,
+            "announcementID": null,
+            "minus": null,
+            "sum": null,
+            "adjust": null,
+            "special": null,
+            "title": null,
+            "important": null
+          }
+        ],
+        "apiKey": "mainOperCost",
+        "data": [
+          96602000000,
+          194993000000,
+          104962000000,
+          208794000000,
+          93583000000,
+          198223000000,
+          91238000000,
+          121585438700,
+          55733419600,
+          97381353000,
+          129383696600,
+          130041177300
+        ],
+        "compare": null
+      },
+      {
+        "parentMenu": "毛利率",
+        "childMenus": [
+          {
+            "menu": "产品",
+            "apiKey": "20",
+            "data": [
+              0.53469,
+              0.53629,
+              0.537143,
+              0.49882498,
+              0.512751,
+              0.530533,
+              0.549119,
+              0.505975,
+              0.49440497,
+              0.37324402,
+              0.445178,
+              0.428918
+            ],
+            "isCompute": null,
+            "unit": null,
+            "fullName": null,
+            "childMenus": [
+              {
+                "menu": "贸易",
+                "apiKey": null,
+                "data": [
+                  0.104674995,
+                  0.092615,
+                  0.078271,
+                  0.067559,
+                  0.082612,
+                  0.050468996,
+                  0.042179998,
+                  0.079794005,
+                  0.018629,
+                  0.037919,
+                  0.059183,
+                  0.063407004
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "油气销售",
+                "apiKey": null,
+                "data": [
+                  0.628391,
+                  0.624105,
+                  0.65026605,
+                  0.616259,
+                  0.629195,
+                  0.626242,
+                  0.625551,
+                  0.553958,
+                  0.53547,
+                  0.41372898,
+                  0.516366,
+                  0.513852
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "其他差额项目(计算)",
+                "apiKey": null,
+                "data": [
+                  -0.034964003,
+                  -0.157452,
+                  -0.28455,
+                  0.043036,
+                  0.021396,
+                  -0.008936,
+                  -0.075717,
+                  0.00593,
+                  0.154229,
+                  -0.061796,
+                  0.033905,
+                  -0.087397
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              }
+            ],
+            "tableID": null,
+            "announcementID": null,
+            "minus": null,
+            "sum": null,
+            "adjust": null,
+            "special": null,
+            "title": null,
+            "important": null
+          },
+          {
+            "menu": "地区",
+            "apiKey": "30",
+            "data": [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            "isCompute": null,
+            "unit": null,
+            "fullName": null,
+            "childMenus": [
+              {
+                "menu": "中国大陆",
+                "apiKey": null,
+                "data": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "港澳台及海外",
+                "apiKey": null,
+                "data": [
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0,
+                  0
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "其他差额项目(计算)",
+                "apiKey": null,
+                "data": [
+                  0,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  0,
+                  null,
+                  0,
+                  null,
+                  null
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              }
+            ],
+            "tableID": null,
+            "announcementID": null,
+            "minus": null,
+            "sum": null,
+            "adjust": null,
+            "special": null,
+            "title": null,
+            "important": null
+          },
+          {
+            "menu": "行业",
+            "apiKey": "10",
+            "data": [
+              0.53469,
+              0.53629,
+              0.537143,
+              0.49882498,
+              0.512751,
+              0.530533,
+              0.549119,
+              0.505975,
+              0.49440497,
+              0.37324002,
+              0.445178,
+              0.428918
+            ],
+            "isCompute": null,
+            "unit": null,
+            "fullName": null,
+            "childMenus": [
+              {
+                "menu": "贸易",
+                "apiKey": null,
+                "data": [
+                  0.104674995,
+                  0.092615,
+                  0.078271,
+                  0.067559,
+                  0.082612,
+                  0.050468996,
+                  0.042179998,
+                  0.07983,
+                  0.018629,
+                  0.037914,
+                  0.059183,
+                  0.063407004
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "油气销售",
+                "apiKey": null,
+                "data": [
+                  0.628391,
+                  0.624105,
+                  0.65026605,
+                  0.616259,
+                  0.629195,
+                  0.626242,
+                  0.625551,
+                  0.553954,
+                  0.53547,
+                  0.413728,
+                  0.516366,
+                  0.513852
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "其他差额项目(计算)",
+                "apiKey": null,
+                "data": [
+                  -0.034964003,
+                  -0.157452,
+                  -0.28455,
+                  0.043036,
+                  0.021396,
+                  -0.008936,
+                  -0.075717,
+                  0.005975,
+                  0.154229,
+                  -0.061978,
+                  0.033905,
+                  -0.087397
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              }
+            ],
+            "tableID": null,
+            "announcementID": null,
+            "minus": null,
+            "sum": null,
+            "adjust": null,
+            "special": null,
+            "title": null,
+            "important": null
+          }
+        ],
+        "apiKey": "grossProfitRate",
+        "data": [
+          0.53469,
+          0.53629,
+          0.537143,
+          0.49882498,
+          0.512751,
+          0.530533,
+          0.549119,
+          0.505975,
+          0.49440497,
+          0.37324002,
+          0.445178,
+          0.428918
+        ],
+        "compare": null
+      },
+      {
+        "parentMenu": "毛利",
+        "childMenus": [
+          {
+            "menu": "产品",
+            "apiKey": "20",
+            "data": [
+              111006000000,
+              225513000000,
+              121808000000,
+              207815000000,
+              98481000000,
+              224007000000,
+              111117000000,
+              124526000000,
+              54499814200,
+              57992000000,
+              103814859600,
+              97669037500
+            ],
+            "isCompute": null,
+            "unit": null,
+            "fullName": null,
+            "childMenus": [
+              {
+                "menu": "贸易",
+                "apiKey": null,
+                "data": [
+                  3251000000,
+                  5107000000,
+                  2867000000,
+                  5358000000,
+                  2938000000,
+                  3050000000,
+                  908000000,
+                  1443000000,
+                  118662900,
+                  460000000,
+                  1826798900,
+                  2271890000
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "油气销售",
+                "apiKey": null,
+                "data": [
+                  107923000000,
+                  221941000000,
+                  120372000000,
+                  202051000000,
+                  95440000000,
+                  221036000000,
+                  110523000000,
+                  123048000000,
+                  53881737800,
+                  57757000000,
+                  101813139000,
+                  95862395700
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "其他差额项目(计算)",
+                "apiKey": null,
+                "data": [
+                  -168000000,
+                  -1535000000,
+                  -1431000000,
+                  406000000,
+                  103000000,
+                  -79000000,
+                  -314000000,
+                  35000000,
+                  499413500,
+                  -225000000,
+                  174921700,
+                  -465248200
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              }
+            ],
+            "tableID": null,
+            "announcementID": null,
+            "minus": null,
+            "sum": null,
+            "adjust": null,
+            "special": null,
+            "title": null,
+            "important": null
+          },
+          {
+            "menu": "地区",
+            "apiKey": "30",
+            "data": [
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null,
+              null
+            ],
+            "isCompute": null,
+            "unit": null,
+            "fullName": null,
+            "childMenus": [
+              {
+                "menu": "中国大陆",
+                "apiKey": null,
+                "data": [
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "港澳台及海外",
+                "apiKey": null,
+                "data": [
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "其他差额项目(计算)",
+                "apiKey": null,
+                "data": [
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null,
+                  null
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              }
+            ],
+            "tableID": null,
+            "announcementID": null,
+            "minus": null,
+            "sum": null,
+            "adjust": null,
+            "special": null,
+            "title": null,
+            "important": null
+          },
+          {
+            "menu": "行业",
+            "apiKey": "10",
+            "data": [
+              111006000000,
+              225513000000,
+              121808000000,
+              207815000000,
+              98481000000,
+              224007000000,
+              111117000000,
+              124526251900,
+              54499814200,
+              57991318400,
+              103814859600,
+              97669037500
+            ],
+            "isCompute": null,
+            "unit": null,
+            "fullName": null,
+            "childMenus": [
+              {
+                "menu": "贸易",
+                "apiKey": null,
+                "data": [
+                  3251000000,
+                  5107000000,
+                  2867000000,
+                  5358000000,
+                  2938000000,
+                  3050000000,
+                  908000000,
+                  1443646700,
+                  118662900,
+                  459940400,
+                  1826798900,
+                  2271890000
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "油气销售",
+                "apiKey": null,
+                "data": [
+                  107923000000,
+                  221941000000,
+                  120372000000,
+                  202051000000,
+                  95440000000,
+                  221036000000,
+                  110523000000,
+                  123047338000,
+                  53881737800,
+                  57756990600,
+                  101813139000,
+                  95862395700
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              },
+              {
+                "menu": "其他差额项目(计算)",
+                "apiKey": null,
+                "data": [
+                  -168000000,
+                  -1535000000,
+                  -1431000000,
+                  406000000,
+                  103000000,
+                  -79000000,
+                  -314000000,
+                  35267200,
+                  499413500,
+                  -225612600,
+                  174921700,
+                  -465248200
+                ],
+                "isCompute": null,
+                "unit": null,
+                "fullName": null,
+                "childMenus": null,
+                "tableID": null,
+                "announcementID": null,
+                "minus": null,
+                "sum": null,
+                "adjust": null,
+                "special": null,
+                "title": null,
+                "important": null
+              }
+            ],
+            "tableID": null,
+            "announcementID": null,
+            "minus": null,
+            "sum": null,
+            "adjust": null,
+            "special": null,
+            "title": null,
+            "important": null
+          }
+        ],
+        "apiKey": "grossProfit",
+        "data": [
+          111006000000,
+          225513000000,
+          121808000000,
+          207815000000,
+          98481000000,
+          224007000000,
+          111117000000,
+          124526251900,
+          54499814200,
+          57991318400,
+          103814859600,
+          97669037500
+        ],
+        "compare": null
+      }
+    ],
+    "listDate": 1650470400000,
+    "industryLevel": [
+      {
+        "key": "贸易",
+        "value": 1,
+        "second": 1,
+        "first": "贸易"
+      },
+      {
+        "key": "油气销售",
+        "value": 1,
+        "second": 1,
+        "first": "油气销售"
+      },
+      {
+        "key": "其他差额项目(计算)",
+        "value": 1,
+        "second": 1,
+        "first": "其他差额项目(计算)"
+      }
+    ],
+    "productLevel": [
+      {
+        "key": "贸易",
+        "value": 1,
+        "second": 1,
+        "first": "贸易"
+      },
+      {
+        "key": "油气销售",
+        "value": 1,
+        "second": 1,
+        "first": "油气销售"
+      },
+      {
+        "key": "其他差额项目(计算)",
+        "value": 1,
+        "second": 1,
+        "first": "其他差额项目(计算)"
+      }
+    ],
+    "areaLevel": [
+      {
+        "key": "中国大陆",
+        "value": 1,
+        "second": 1,
+        "first": "中国大陆"
+      },
+      {
+        "key": "港澳台及海外",
+        "value": 1,
+        "second": 1,
+        "first": "港澳台及海外"
+      },
+      {
+        "key": "其他差额项目(计算)",
+        "value": 1,
+        "second": 1,
+        "first": "其他差额项目(计算)"
+      }
+    ]
+  }
+}

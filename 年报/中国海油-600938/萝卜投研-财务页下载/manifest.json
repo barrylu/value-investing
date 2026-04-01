@@ -1,0 +1,218 @@
+[
+  {
+    "slug": "financial_summary_full_periods",
+    "kind": "json",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/600938",
+    "params": {
+      "reportType": "SUMMARY",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left"
+    },
+    "path": "raw/financial_summary_full_periods.json",
+    "bytes": 68628,
+    "coverage": {
+      "first_interval": "2025三季报",
+      "last_interval": "2018年报",
+      "interval_count": 22
+    }
+  },
+  {
+    "slug": "balance_sheet_full_periods",
+    "kind": "json",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/600938",
+    "params": {
+      "reportType": "BS",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left"
+    },
+    "path": "raw/balance_sheet_full_periods.json",
+    "bytes": 110799,
+    "coverage": {
+      "first_interval": "2025三季报",
+      "last_interval": "2018年报",
+      "interval_count": 20
+    }
+  },
+  {
+    "slug": "income_statement_full_periods",
+    "kind": "json",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/600938",
+    "params": {
+      "reportType": "IS",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left"
+    },
+    "path": "raw/income_statement_full_periods.json",
+    "bytes": 58501,
+    "coverage": {
+      "first_interval": "2025三季报",
+      "last_interval": "2018年报",
+      "interval_count": 22
+    }
+  },
+  {
+    "slug": "cashflow_full_periods",
+    "kind": "json",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/600938",
+    "params": {
+      "reportType": "CF",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left"
+    },
+    "path": "raw/cashflow_full_periods.json",
+    "bytes": 70554,
+    "coverage": {
+      "first_interval": "2025三季报",
+      "last_interval": "2018年报",
+      "interval_count": 22
+    }
+  },
+  {
+    "slug": "key_finance_indicators_full_periods",
+    "kind": "json",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/600938",
+    "params": {
+      "reportType": "MZ",
+      "ticker": "600938",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left"
+    },
+    "path": "raw/key_finance_indicators_full_periods.json",
+    "bytes": 19362,
+    "coverage": {
+      "first_interval": "2025三季报",
+      "last_interval": "2018年报",
+      "interval_count": 20
+    }
+  },
+  {
+    "slug": "main_composition_full_periods",
+    "kind": "json",
+    "url": "https://gw.datayes.com/rrp_adventure/web/mainComposition/600938",
+    "params": {
+      "reportName": "MC",
+      "reportType": "A,S1",
+      "period": "30",
+      "includeLatest": "true",
+      "duration": "accumulate",
+      "isHideEmptyData": "true",
+      "unit": "4",
+      "decimalPoint": "2",
+      "order": "left",
+      "isStd": "true"
+    },
+    "path": "raw/main_composition_full_periods.json",
+    "bytes": 46970,
+    "coverage": {
+      "first_interval": "2025半年报",
+      "last_interval": "2018年报",
+      "interval_count": 12
+    }
+  },
+  {
+    "slug": "balance_sheet_excel",
+    "kind": "excel",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/excel/600938",
+    "params": {
+      "reportType": "BS",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left",
+      "isHideEmptyData": "true",
+      "unit": "4",
+      "decimalPoint": "2"
+    },
+    "path": "excel/中国海油-资产负债表-全期间.xls",
+    "bytes": 30720
+  },
+  {
+    "slug": "income_statement_excel",
+    "kind": "excel",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/excel/600938",
+    "params": {
+      "reportType": "IS",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left",
+      "isHideEmptyData": "true",
+      "unit": "4",
+      "decimalPoint": "2"
+    },
+    "path": "excel/中国海油-利润表-全期间.xls",
+    "bytes": 19456
+  },
+  {
+    "slug": "cashflow_excel",
+    "kind": "excel",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/excel/600938",
+    "params": {
+      "reportType": "CF",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left",
+      "isHideEmptyData": "true",
+      "unit": "4",
+      "decimalPoint": "2"
+    },
+    "path": "excel/中国海油-现金流量表-全期间.xls",
+    "bytes": 19968
+  },
+  {
+    "slug": "financial_summary_excel",
+    "kind": "excel",
+    "url": "https://gw.datayes.com/rrp_adventure/fdmtNew/excel/600938",
+    "params": {
+      "reportType": "SUMMARY",
+      "reportPeriodType": "A,CQ3,S1,Q1",
+      "duration": "ACCUMULATE",
+      "includeLatest": "true",
+      "period": "30",
+      "displaySort": "left",
+      "isHideEmptyData": "true",
+      "unit": "4",
+      "decimalPoint": "2"
+    },
+    "path": "excel/中国海油-财务摘要-全期间.xls",
+    "bytes": 38912
+  },
+  {
+    "slug": "main_composition_excel",
+    "kind": "excel",
+    "url": "https://gw.datayes.com/rrp_adventure/web/mainComposition/excel/600938",
+    "params": {
+      "reportName": "MC",
+      "reportType": "A,S1",
+      "period": "30",
+      "includeLatest": "true",
+      "duration": "accumulate",
+      "isHideEmptyData": "true",
+      "unit": "4",
+      "decimalPoint": "2",
+      "order": "left",
+      "isStd": "true"
+    },
+    "path": "excel/中国海油-主营构成表-全期间.xls",
+    "bytes": 14848
+  }
+]

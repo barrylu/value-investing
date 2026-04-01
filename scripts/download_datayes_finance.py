@@ -81,7 +81,7 @@ def download_binary(session: requests.Session, url: str, params: dict[str, Any],
     }
 
 
-def json_downloads() -> list[JsonDownload]:
+def json_downloads(ticker: str, display_unit: str) -> list[JsonDownload]:
     full_period_params = {
         "reportPeriodType": "A,CQ3,S1,Q1",
         "duration": "ACCUMULATE",
@@ -116,7 +116,7 @@ def json_downloads() -> list[JsonDownload]:
             path_template="raw/key_finance_indicators_full_periods.json",
             params={
                 "reportType": "MZ",
-                "ticker": "600900",
+                "ticker": ticker,
                 **full_period_params,
             },
         ),
@@ -130,7 +130,7 @@ def json_downloads() -> list[JsonDownload]:
                 "includeLatest": "true",
                 "duration": "accumulate",
                 "isHideEmptyData": "true",
-                "unit": "3",
+                "unit": display_unit,
                 "decimalPoint": "2",
                 "order": "left",
                 "isStd": "true",
@@ -139,7 +139,7 @@ def json_downloads() -> list[JsonDownload]:
     ]
 
 
-def binary_downloads() -> list[BinaryDownload]:
+def binary_downloads(company_name: str, display_unit: str) -> list[BinaryDownload]:
     full_period_export = {
         "reportPeriodType": "A,CQ3,S1,Q1",
         "duration": "ACCUMULATE",
@@ -147,33 +147,33 @@ def binary_downloads() -> list[BinaryDownload]:
         "period": "30",
         "displaySort": "left",
         "isHideEmptyData": "true",
-        "unit": "3",
+        "unit": display_unit,
         "decimalPoint": "2",
     }
     return [
         BinaryDownload(
             slug="balance_sheet_excel",
-            path_template="excel/长江电力-资产负债表-全期间.xls",
+            path_template=f"excel/{company_name}-资产负债表-全期间.xls",
             params={"reportType": "BS", **full_period_export},
         ),
         BinaryDownload(
             slug="income_statement_excel",
-            path_template="excel/长江电力-利润表-全期间.xls",
+            path_template=f"excel/{company_name}-利润表-全期间.xls",
             params={"reportType": "IS", **full_period_export},
         ),
         BinaryDownload(
             slug="cashflow_excel",
-            path_template="excel/长江电力-现金流量表-全期间.xls",
+            path_template=f"excel/{company_name}-现金流量表-全期间.xls",
             params={"reportType": "CF", **full_period_export},
         ),
         BinaryDownload(
             slug="financial_summary_excel",
-            path_template="excel/长江电力-财务摘要-全期间.xls",
+            path_template=f"excel/{company_name}-财务摘要-全期间.xls",
             params={"reportType": "SUMMARY", **full_period_export},
         ),
         BinaryDownload(
             slug="main_composition_excel",
-            path_template="excel/长江电力-主营构成表-全期间.xls",
+            path_template=f"excel/{company_name}-主营构成表-全期间.xls",
             params={
                 "reportName": "MC",
                 "reportType": "A,S1",
@@ -181,7 +181,7 @@ def binary_downloads() -> list[BinaryDownload]:
                 "includeLatest": "true",
                 "duration": "accumulate",
                 "isHideEmptyData": "true",
-                "unit": "3",
+                "unit": display_unit,
                 "decimalPoint": "2",
                 "order": "left",
                 "isStd": "true",
@@ -197,15 +197,23 @@ def write_manifest(output_dir: Path, records: list[dict[str, Any]]) -> None:
     )
 
 
-def write_readme(output_dir: Path, records: list[dict[str, Any]]) -> None:
+def write_readme(
+    output_dir: Path,
+    records: list[dict[str, Any]],
+    *,
+    company_name: str,
+    ticker: str,
+    display_unit_label: str,
+) -> None:
     lines = [
         "# 萝卜投研财务页下载说明",
         "",
         "说明：",
         "",
-        "- 本目录内容来自长江电力 `600900` 的萝卜投研财务页接口下载",
+        f"- 本目录内容来自{company_name} `{ticker}` 的萝卜投研财务页接口下载",
         "- 下载时使用了临时登录态，但本目录**不保存**任何 Cookie 或令牌",
         "- `raw/` 为原始 JSON 响应，`excel/` 为页面可导出的表格文件",
+        f"- 导出展示单位按页面选择固定为：`{display_unit_label}`",
         "- 主财务接口当前可回溯到 `2002年报/2003季报`，主营构成当前可回溯到 `2007年报/2008半年报` 左右，取决于页面本身提供范围",
         "",
         "下载文件：",
@@ -220,6 +228,9 @@ def write_readme(output_dir: Path, records: list[dict[str, Any]]) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser(description="下载萝卜投研财务页数据")
     parser.add_argument("--ticker", default="600900")
+    parser.add_argument("--company-name", default="长江电力")
+    parser.add_argument("--display-unit", default="3", help="Datayes 导出单位编码，例如 3")
+    parser.add_argument("--display-unit-label", default="亿元", help="展示单位文本，例如 亿元")
     parser.add_argument(
         "--output-dir",
         default="/Users/luzuoguan/ai/value-investing/年报/长江电力-600900/萝卜投研-财务页下载",
@@ -239,6 +250,9 @@ def main() -> None:
 
     session = build_session(cookie=cookie, user_agent=user_agent)
     ticker = args.ticker
+    company_name = args.company_name
+    display_unit = args.display_unit
+    display_unit_label = args.display_unit_label
 
     records: list[dict[str, Any]] = []
 
@@ -247,7 +261,7 @@ def main() -> None:
     main_comp_base = f"https://gw.datayes.com/rrp_adventure/web/mainComposition/{ticker}"
     main_comp_excel_base = f"https://gw.datayes.com/rrp_adventure/web/mainComposition/excel/{ticker}"
 
-    for item in json_downloads():
+    for item in json_downloads(ticker, display_unit):
         target = output_dir / item.path_template
         target.parent.mkdir(parents=True, exist_ok=True)
         base_url = main_comp_base if item.slug == "main_composition_full_periods" else cards_base
@@ -263,7 +277,7 @@ def main() -> None:
             }
         )
 
-    for item in binary_downloads():
+    for item in binary_downloads(company_name, display_unit):
         target = output_dir / item.path_template
         target.parent.mkdir(parents=True, exist_ok=True)
         base_url = main_comp_excel_base if item.slug == "main_composition_excel" else cards_excel_base
@@ -280,7 +294,13 @@ def main() -> None:
         )
 
     write_manifest(output_dir, records)
-    write_readme(output_dir, records)
+    write_readme(
+        output_dir,
+        records,
+        company_name=company_name,
+        ticker=ticker,
+        display_unit_label=display_unit_label,
+    )
     print(f"已下载 {len(records)} 个文件到: {output_dir}")
 
 

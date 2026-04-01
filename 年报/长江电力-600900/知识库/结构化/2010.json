@@ -1,0 +1,306 @@
+{
+  "year": 2010,
+  "title": "2010年年度报告",
+  "pdf_file": "2011-04-30_2010年年度报告_59371124.pdf",
+  "pdf_sha256": "0f76af76fd178bc514bde08674c729778dcb2e5a30d019c5e765391df6c3d420",
+  "pdf_pages": 140,
+  "median_page_chars": 1040.5,
+  "low_text_pages": [],
+  "toc_entries": [
+    {
+      "section_label": "第一节",
+      "title": "公司基本情况简介",
+      "printed_page": 1
+    },
+    {
+      "section_label": "第二节",
+      "title": "会计数据和业务数据摘要",
+      "printed_page": 4
+    },
+    {
+      "section_label": "第三节",
+      "title": "股本变动及股东情况",
+      "printed_page": 6
+    },
+    {
+      "section_label": "第四节",
+      "title": "董事、监事、高级管理人员和员工情况",
+      "printed_page": 10
+    },
+    {
+      "section_label": "第五节",
+      "title": "公司治理",
+      "printed_page": 17
+    },
+    {
+      "section_label": "第六节",
+      "title": "股东大会情况简介",
+      "printed_page": 23
+    },
+    {
+      "section_label": "第七节",
+      "title": "董事会报告",
+      "printed_page": 25
+    },
+    {
+      "section_label": "第八节",
+      "title": "监事会报告",
+      "printed_page": 47
+    },
+    {
+      "section_label": "第九节",
+      "title": "重要事项",
+      "printed_page": 51
+    },
+    {
+      "section_label": "第十节",
+      "title": "财务报告",
+      "printed_page": 59
+    },
+    {
+      "section_label": "第十一节",
+      "title": "备查文件目录",
+      "printed_page": 133
+    }
+  ],
+  "top_headings": [
+    {
+      "section_label": "第一节",
+      "title": "公司基本情况简介",
+      "pdf_page": 4,
+      "line": "第一节 公司基本情况简介"
+    },
+    {
+      "section_label": "第二节",
+      "title": "会计数据和业务数据摘要",
+      "pdf_page": 7,
+      "line": "第二节 会计数据和业务数据摘要"
+    },
+    {
+      "section_label": "第三节",
+      "title": "股本变动及股东情况",
+      "pdf_page": 9,
+      "line": "第三节 股本变动及股东情况"
+    },
+    {
+      "section_label": "第四节",
+      "title": "董事、监事、高级管理人员和员工",
+      "pdf_page": 13,
+      "line": "第四节 董事、监事、高级管理人员和员工"
+    },
+    {
+      "section_label": "第五节",
+      "title": "公司治理",
+      "pdf_page": 20,
+      "line": "第五节 公司治理"
+    },
+    {
+      "section_label": "第六节",
+      "title": "股东大会情况简介",
+      "pdf_page": 26,
+      "line": "第六节 股东大会情况简介"
+    },
+    {
+      "section_label": "第七节",
+      "title": "董事会报告",
+      "pdf_page": 28,
+      "line": "第七节 董事会报告"
+    },
+    {
+      "section_label": "第八节",
+      "title": "监事会报告",
+      "pdf_page": 50,
+      "line": "第八节 监事会报告"
+    },
+    {
+      "section_label": "第九节",
+      "title": "重要事项",
+      "pdf_page": 54,
+      "line": "第九节 重要事项"
+    },
+    {
+      "section_label": "第十节",
+      "title": "财务报告",
+      "pdf_page": 62,
+      "line": "第十节 财务报告"
+    },
+    {
+      "section_label": "第十一节",
+      "title": "备查文件目录",
+      "pdf_page": 136,
+      "line": "第十一节 备查文件目录"
+    }
+  ],
+  "toc_validation": {
+    "offset": 3,
+    "matched": 11,
+    "total": 11,
+    "details": [
+      {
+        "section_label": "第一节",
+        "title": "公司基本情况简介",
+        "printed_page": 1,
+        "expected_pdf_page": 4,
+        "actual_pdf_page": 4,
+        "status": "命中"
+      },
+      {
+        "section_label": "第二节",
+        "title": "会计数据和业务数据摘要",
+        "printed_page": 4,
+        "expected_pdf_page": 7,
+        "actual_pdf_page": 7,
+        "status": "命中"
+      },
+      {
+        "section_label": "第三节",
+        "title": "股本变动及股东情况",
+        "printed_page": 6,
+        "expected_pdf_page": 9,
+        "actual_pdf_page": 9,
+        "status": "命中"
+      },
+      {
+        "section_label": "第四节",
+        "title": "董事、监事、高级管理人员和员工情况",
+        "printed_page": 10,
+        "expected_pdf_page": 13,
+        "actual_pdf_page": 13,
+        "status": "命中"
+      },
+      {
+        "section_label": "第五节",
+        "title": "公司治理",
+        "printed_page": 17,
+        "expected_pdf_page": 20,
+        "actual_pdf_page": 20,
+        "status": "命中"
+      },
+      {
+        "section_label": "第六节",
+        "title": "股东大会情况简介",
+        "printed_page": 23,
+        "expected_pdf_page": 26,
+        "actual_pdf_page": 26,
+        "status": "命中"
+      },
+      {
+        "section_label": "第七节",
+        "title": "董事会报告",
+        "printed_page": 25,
+        "expected_pdf_page": 28,
+        "actual_pdf_page": 28,
+        "status": "命中"
+      },
+      {
+        "section_label": "第八节",
+        "title": "监事会报告",
+        "printed_page": 47,
+        "expected_pdf_page": 50,
+        "actual_pdf_page": 50,
+        "status": "命中"
+      },
+      {
+        "section_label": "第九节",
+        "title": "重要事项",
+        "printed_page": 51,
+        "expected_pdf_page": 54,
+        "actual_pdf_page": 54,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十节",
+        "title": "财务报告",
+        "printed_page": 59,
+        "expected_pdf_page": 62,
+        "actual_pdf_page": 62,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十一节",
+        "title": "备查文件目录",
+        "printed_page": 133,
+        "expected_pdf_page": 136,
+        "actual_pdf_page": 136,
+        "status": "命中"
+      }
+    ]
+  },
+  "workbook_directory": {
+    "年份": 2010,
+    "年报标题": "2010年年度报告",
+    "PDF文件": "2011-04-30_2010年年度报告_59371124.pdf",
+    "页数": 140,
+    "主表页命中": "利润表:65,66, 现金流量表:66, 资产负债表:63,64,65",
+    "主表行数": 124,
+    "附注起始页": 71,
+    "附注行数": 1372,
+    "状态": "成功"
+  },
+  "excel_comparison": {
+    "overall": {
+      "一致": 104,
+      "差异": 0,
+      "未命中": 4
+    },
+    "by_statement": {
+      "利润表": {
+        "compared_rows": 28,
+        "一致": 25,
+        "差异": 0,
+        "未命中": 3
+      },
+      "资产负债表": {
+        "compared_rows": 51,
+        "一致": 50,
+        "差异": 0,
+        "未命中": 1
+      },
+      "现金流量表": {
+        "compared_rows": 29,
+        "一致": 29,
+        "差异": 0,
+        "未命中": 0
+      }
+    },
+    "examples": [
+      {
+        "year": 2010,
+        "statement": "利润表",
+        "item": "其中:被合并方在合并前实现的净利润",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2010,
+        "statement": "利润表",
+        "item": "每股收益-基本",
+        "status": "未命中",
+        "xls_current": 0.5,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2010,
+        "statement": "利润表",
+        "item": "每股收益-稀释",
+        "status": "未命中",
+        "xls_current": 0.5,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2010,
+        "statement": "资产负债表",
+        "item": "其他应付款(合计):应付股利",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      }
+    ]
+  },
+  "datayes_summary": []
+}

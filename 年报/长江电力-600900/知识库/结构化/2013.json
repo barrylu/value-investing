@@ -1,0 +1,333 @@
+{
+  "year": 2013,
+  "title": "2013年年度报告",
+  "pdf_file": "2014-04-30_2013年年度报告_63954051.pdf",
+  "pdf_sha256": "34746ec3331ac1dae25a96e3904516e19b01d8f46775de17e19c9a9c7efd168c",
+  "pdf_pages": 129,
+  "median_page_chars": 1097,
+  "low_text_pages": [],
+  "toc_entries": [
+    {
+      "section_label": "第一节",
+      "title": "释义及重大风险提示",
+      "printed_page": 1
+    },
+    {
+      "section_label": "第二节",
+      "title": "公司简介",
+      "printed_page": 2
+    },
+    {
+      "section_label": "第三节",
+      "title": "会计数据和财务指标摘要",
+      "printed_page": 4
+    },
+    {
+      "section_label": "第四节",
+      "title": "董事会报告",
+      "printed_page": 6
+    },
+    {
+      "section_label": "第五节",
+      "title": "重要事项",
+      "printed_page": 20
+    },
+    {
+      "section_label": "第六节",
+      "title": "股份变动及股东情况",
+      "printed_page": 26
+    },
+    {
+      "section_label": "第七节",
+      "title": "董事、监事、高级管理人员和员工情况",
+      "printed_page": 30
+    },
+    {
+      "section_label": "第八节",
+      "title": "公司治理",
+      "printed_page": 36
+    },
+    {
+      "section_label": "第九节",
+      "title": "内部控制",
+      "printed_page": 41
+    },
+    {
+      "section_label": "第十节",
+      "title": "财务报表",
+      "printed_page": 43
+    },
+    {
+      "section_label": "第十一节",
+      "title": "备查文件目录",
+      "printed_page": 126
+    }
+  ],
+  "top_headings": [
+    {
+      "section_label": "第一节",
+      "title": "释义及重大风险提示",
+      "pdf_page": 4,
+      "line": "第一节 释义及重大风险提示"
+    },
+    {
+      "section_label": "第二节",
+      "title": "公司简介",
+      "pdf_page": 5,
+      "line": "第二节 公司简介"
+    },
+    {
+      "section_label": "第三节",
+      "title": "会计数据和财务指标摘要",
+      "pdf_page": 7,
+      "line": "第三节 会计数据和财务指标摘要"
+    },
+    {
+      "section_label": "第四节",
+      "title": "董事会报告",
+      "pdf_page": 9,
+      "line": "第四节 董事会报告"
+    },
+    {
+      "section_label": "第五节",
+      "title": "重要事项",
+      "pdf_page": 23,
+      "line": "第五节 重要事项"
+    },
+    {
+      "section_label": "第六节",
+      "title": "股份变动及股东情况",
+      "pdf_page": 29,
+      "line": "第六节 股份变动及股东情况"
+    },
+    {
+      "section_label": "第七节",
+      "title": "董事、监事、高级管理人员和员工情况",
+      "pdf_page": 33,
+      "line": "第七节 董事、监事、高级管理人员和员工情况"
+    },
+    {
+      "section_label": "第八节",
+      "title": "公司治理",
+      "pdf_page": 39,
+      "line": "第八节 公司治理"
+    },
+    {
+      "section_label": "第九节",
+      "title": "内部控制",
+      "pdf_page": 44,
+      "line": "第九节 内部控制"
+    },
+    {
+      "section_label": "第十节",
+      "title": "财务报表",
+      "pdf_page": 46,
+      "line": "第十节 财务报表"
+    },
+    {
+      "section_label": "第十一节",
+      "title": "备查文件目录",
+      "pdf_page": 129,
+      "line": "第十一节 备查文件目录"
+    }
+  ],
+  "toc_validation": {
+    "offset": 3,
+    "matched": 11,
+    "total": 11,
+    "details": [
+      {
+        "section_label": "第一节",
+        "title": "释义及重大风险提示",
+        "printed_page": 1,
+        "expected_pdf_page": 4,
+        "actual_pdf_page": 4,
+        "status": "命中"
+      },
+      {
+        "section_label": "第二节",
+        "title": "公司简介",
+        "printed_page": 2,
+        "expected_pdf_page": 5,
+        "actual_pdf_page": 5,
+        "status": "命中"
+      },
+      {
+        "section_label": "第三节",
+        "title": "会计数据和财务指标摘要",
+        "printed_page": 4,
+        "expected_pdf_page": 7,
+        "actual_pdf_page": 7,
+        "status": "命中"
+      },
+      {
+        "section_label": "第四节",
+        "title": "董事会报告",
+        "printed_page": 6,
+        "expected_pdf_page": 9,
+        "actual_pdf_page": 9,
+        "status": "命中"
+      },
+      {
+        "section_label": "第五节",
+        "title": "重要事项",
+        "printed_page": 20,
+        "expected_pdf_page": 23,
+        "actual_pdf_page": 23,
+        "status": "命中"
+      },
+      {
+        "section_label": "第六节",
+        "title": "股份变动及股东情况",
+        "printed_page": 26,
+        "expected_pdf_page": 29,
+        "actual_pdf_page": 29,
+        "status": "命中"
+      },
+      {
+        "section_label": "第七节",
+        "title": "董事、监事、高级管理人员和员工情况",
+        "printed_page": 30,
+        "expected_pdf_page": 33,
+        "actual_pdf_page": 33,
+        "status": "命中"
+      },
+      {
+        "section_label": "第八节",
+        "title": "公司治理",
+        "printed_page": 36,
+        "expected_pdf_page": 39,
+        "actual_pdf_page": 39,
+        "status": "命中"
+      },
+      {
+        "section_label": "第九节",
+        "title": "内部控制",
+        "printed_page": 41,
+        "expected_pdf_page": 44,
+        "actual_pdf_page": 44,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十节",
+        "title": "财务报表",
+        "printed_page": 43,
+        "expected_pdf_page": 46,
+        "actual_pdf_page": 46,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十一节",
+        "title": "备查文件目录",
+        "printed_page": 126,
+        "expected_pdf_page": 129,
+        "actual_pdf_page": 129,
+        "status": "命中"
+      }
+    ]
+  },
+  "workbook_directory": {
+    "年份": 2013,
+    "年报标题": "2013年年度报告",
+    "PDF文件": "2014-04-30_2013年年度报告_63954051.pdf",
+    "页数": 129,
+    "主表页命中": "利润表:49,50, 现金流量表:50,51, 资产负债表:47,48,49",
+    "主表行数": 134,
+    "附注起始页": 55,
+    "附注行数": 1409,
+    "状态": "成功"
+  },
+  "excel_comparison": {
+    "overall": {
+      "一致": 105,
+      "差异": 0,
+      "未命中": 7
+    },
+    "by_statement": {
+      "利润表": {
+        "compared_rows": 27,
+        "一致": 25,
+        "差异": 0,
+        "未命中": 2
+      },
+      "资产负债表": {
+        "compared_rows": 52,
+        "一致": 49,
+        "差异": 0,
+        "未命中": 3
+      },
+      "现金流量表": {
+        "compared_rows": 33,
+        "一致": 31,
+        "差异": 0,
+        "未命中": 2
+      }
+    },
+    "examples": [
+      {
+        "year": 2013,
+        "statement": "利润表",
+        "item": "每股收益-基本",
+        "status": "未命中",
+        "xls_current": 0.55,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2013,
+        "statement": "利润表",
+        "item": "每股收益-稀释",
+        "status": "未命中",
+        "xls_current": 0.55,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2013,
+        "statement": "资产负债表",
+        "item": "交易性金融资产",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2013,
+        "statement": "资产负债表",
+        "item": "长期待摊费用",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2013,
+        "statement": "资产负债表",
+        "item": "外币报表折算差额",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2013,
+        "statement": "现金流量表",
+        "item": "吸收投资收到的现金",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2013,
+        "statement": "现金流量表",
+        "item": "其中:子公司吸收少数股东投资收到的现金",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      }
+    ]
+  },
+  "datayes_summary": []
+}

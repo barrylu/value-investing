@@ -12,19 +12,29 @@ class CninfoDownloader
   STATIC_BASE_URL = 'http://static.cninfo.com.cn/'
   USER_AGENT = 'Mozilla/5.0 (Macintosh; Intel Mac OS X) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0 Safari/537.36'
 
-  COMPANY_CODE = '600900'
-  COMPANY_NAME = '长江电力'
-  DATE_RANGE = '2003-01-01~2025-12-31'
-  OUTPUT_DIR = '/Users/luzuoguan/ai/value-investing/年报/长江电力-600900'
-
-  EXPECTED_ANNUAL_YEARS = (2003..2024).to_a.freeze
+  DEFAULT_COMPANY_CODE = '600900'
+  DEFAULT_COMPANY_NAME = '长江电力'
+  DEFAULT_DATE_RANGE = '2003-01-01~2025-12-31'
+  DEFAULT_OUTPUT_DIR = '/Users/luzuoguan/ai/value-investing/年报/长江电力-600900'
+  DEFAULT_EXPECTED_ANNUAL_YEARS = (2003..2024).to_a.freeze
 
   Query = Struct.new(:name, :categories, :searchkey, :purpose, keyword_init: true)
 
-  def initialize
-    FileUtils.mkdir_p(OUTPUT_DIR)
+  def initialize(
+    company_code: ENV.fetch('CNINFO_COMPANY_CODE', DEFAULT_COMPANY_CODE),
+    company_name: ENV.fetch('CNINFO_COMPANY_NAME', DEFAULT_COMPANY_NAME),
+    date_range: ENV.fetch('CNINFO_DATE_RANGE', DEFAULT_DATE_RANGE),
+    output_dir: ENV.fetch('CNINFO_OUTPUT_DIR', DEFAULT_OUTPUT_DIR),
+    expected_annual_years: nil
+  )
+    @company_code = company_code
+    @company_name = utf8_text(company_name)
+    @date_range = date_range
+    @output_dir = utf8_text(output_dir)
+    @expected_annual_years = expected_annual_years || self.class.parse_expected_annual_years
+    FileUtils.mkdir_p(@output_dir)
     @org_id = fetch_org_id
-    @stock_param = "#{COMPANY_CODE},#{@org_id}"
+    @stock_param = "#{@company_code},#{@org_id}"
     @seen_ids = {}
     @announcements = []
   end
@@ -47,6 +57,19 @@ class CninfoDownloader
   end
 
   private
+
+  def self.parse_expected_annual_years
+    explicit = ENV['CNINFO_EXPECTED_YEARS'].to_s.strip
+    return explicit.split(',').map(&:strip).reject(&:empty?).map(&:to_i).freeze unless explicit.empty?
+
+    range = ENV['CNINFO_EXPECTED_YEAR_RANGE'].to_s.strip
+    return DEFAULT_EXPECTED_ANNUAL_YEARS if range.empty?
+
+    matched = range.match(/\A(\d{4})\s*-\s*(\d{4})\z/)
+    raise "CNINFO_EXPECTED_YEAR_RANGE 格式应为 2022-2024，当前为 #{range}" unless matched
+
+    (matched[1].to_i..matched[2].to_i).to_a.freeze
+  end
 
   def queries
     [
@@ -74,8 +97,8 @@ class CninfoDownloader
   def fetch_org_id
     response = http_get(STOCK_JSON_URL)
     data = JSON.parse(response.body)
-    stock = data.fetch('stockList').find { |item| item['code'] == COMPANY_CODE }
-    raise "未找到 #{COMPANY_CODE} 的 orgId" unless stock
+    stock = data.fetch('stockList').find { |item| item['code'] == @company_code }
+    raise "未找到 #{@company_code} 的 orgId" unless stock
 
     stock.fetch('orgId')
   end
@@ -96,7 +119,7 @@ class CninfoDownloader
         'secid' => '',
         'category' => query.categories.join(';'),
         'trade' => '',
-        'seDate' => DATE_RANGE,
+        'seDate' => @date_range,
         'sortName' => '',
         'sortType' => '',
         'isHLtitle' => 'false'
@@ -190,7 +213,7 @@ class CninfoDownloader
   end
 
   def missing_years(records)
-    EXPECTED_ANNUAL_YEARS - annual_year_map(records).keys
+    @expected_annual_years - annual_year_map(records).keys
   end
 
   def annual_year_map(records)
@@ -258,16 +281,17 @@ class CninfoDownloader
     expected = {}
     records.each { |record| expected[file_path_for(record)] = true }
 
-    Dir.glob(File.join(OUTPUT_DIR, '*.pdf')).each do |path|
+    Dir.glob(File.join(@output_dir, '*.pdf')).each do |path|
       File.delete(path) unless expected[path]
     end
   end
 
   def file_path_for(record)
-    date = announcement_date(record)
-    safe_title = sanitize_filename(record['announcementTitle'].to_s)
+    date = utf8_text(announcement_date(record))
+    safe_title = utf8_text(sanitize_filename(record['announcementTitle'].to_s))
     id = record['announcementId'].to_s
-    File.join(OUTPUT_DIR, "#{date}_#{safe_title}_#{id}.pdf")
+    output_dir = utf8_text(@output_dir)
+    File.join(output_dir, "#{date}_#{safe_title}_#{id}.pdf")
   end
 
   def announcement_date(record)
@@ -281,12 +305,18 @@ class CninfoDownloader
   end
 
   def sanitize_filename(name)
-    cleaned = name.encode('UTF-8', invalid: :replace, undef: :replace, replace: '')
+    cleaned = utf8_text(name)
     cleaned = cleaned.gsub(/[\\\/:\*\?\"<>\|]/, '_')
     cleaned = cleaned.gsub(/\s+/, '_')
     cleaned = cleaned.gsub(/_+/, '_')
     cleaned = cleaned.sub(/\A_+/, '').sub(/_+\z/, '')
     cleaned.empty? ? 'untitled' : cleaned[0, 120]
+  end
+
+  def utf8_text(value)
+    text = value.to_s.dup
+    text.force_encoding('UTF-8') if text.encoding == Encoding::ASCII_8BIT
+    text.encode('UTF-8', invalid: :replace, undef: :replace, replace: '')
   end
 
   def write_metadata(records)
@@ -302,14 +332,14 @@ class CninfoDownloader
       }
     end
 
-    File.write(File.join(OUTPUT_DIR, 'metadata.json'), JSON.pretty_generate(payload))
+    File.write(File.join(@output_dir, 'metadata.json'), JSON.pretty_generate(payload))
   end
 
   def write_download_manifest(records)
     lines = []
-    lines << "# 长江电力下载清单"
+    lines << "# #{@company_name}下载清单"
     lines << ''
-    lines << "- 公司：#{COMPANY_NAME}（#{COMPANY_CODE}.SH）"
+    lines << "- 公司：#{@company_name}（#{@company_code}.SH）"
     lines << "- 来源：巨潮资讯网 `hisAnnouncement/query` 与 `static.cninfo.com.cn`"
     lines << "- 生成时间：#{Time.now.strftime('%Y-%m-%d %H:%M:%S')}"
     lines << "- 文件总数：#{records.length}"
@@ -324,22 +354,22 @@ class CninfoDownloader
       lines << ''
     end
 
-    File.write(File.join(OUTPUT_DIR, '下载清单.md'), lines.join("\n"))
+    File.write(File.join(@output_dir, '下载清单.md'), lines.join("\n"))
   end
 
   def write_verification_report(records)
     annual_map = annual_year_map(records)
     lines = []
-    lines << "# 长江电力核对结果"
+    lines << "# #{@company_name}核对结果"
     lines << ''
     lines << "- 核对时间：#{Time.now.strftime('%Y-%m-%d %H:%M:%S')}"
-    lines << "- 预期年报年度：#{EXPECTED_ANNUAL_YEARS.first}-#{EXPECTED_ANNUAL_YEARS.last}"
+    lines << "- 预期年报年度：#{@expected_annual_years.first}-#{@expected_annual_years.last}"
     lines << "- 实际识别年报年度数：#{annual_map.keys.sort.length}"
     lines << ''
     lines << "## 年报年度核对"
     lines << ''
 
-    EXPECTED_ANNUAL_YEARS.each do |year|
+    @expected_annual_years.each do |year|
       items = annual_map[year] || []
       if items.empty?
         lines << "- [缺失] #{year} 年年报"
@@ -373,7 +403,7 @@ class CninfoDownloader
       lines << "- 招股材料识别状态：#{ipo_items.any? { |item| item['announcementTitle'].to_s.match?(/招股说明书/) } ? '已识别到招股说明书' : '未明确识别到招股说明书'}"
     end
 
-    File.write(File.join(OUTPUT_DIR, '核对结果.md'), lines.join("\n"))
+    File.write(File.join(@output_dir, '核对结果.md'), lines.join("\n"))
   end
 
   def http_get(uri, binary: false)

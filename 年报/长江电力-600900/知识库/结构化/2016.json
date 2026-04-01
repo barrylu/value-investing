@@ -1,0 +1,350 @@
+{
+  "year": 2016,
+  "title": "2016年年度报告",
+  "pdf_file": "2017-04-29_2016年年度报告_1203425603.pdf",
+  "pdf_sha256": "54273e0421e3e71d297aa8691c3b6bf25e6749cb8f0af3e50a6950d6585230be",
+  "pdf_pages": 193,
+  "median_page_chars": 842,
+  "low_text_pages": [],
+  "toc_entries": [
+    {
+      "section_label": "第一节",
+      "title": "释义",
+      "printed_page": 4
+    },
+    {
+      "section_label": "第二节",
+      "title": "公司简介和主要财务指标",
+      "printed_page": 4
+    },
+    {
+      "section_label": "第三节",
+      "title": "公司业务概要",
+      "printed_page": 9
+    },
+    {
+      "section_label": "第四节",
+      "title": "经营情况讨论与分析",
+      "printed_page": 12
+    },
+    {
+      "section_label": "第五节",
+      "title": "重要事项",
+      "printed_page": 26
+    },
+    {
+      "section_label": "第六节",
+      "title": "普通股股份变动及股东情况",
+      "printed_page": 36
+    },
+    {
+      "section_label": "第七节",
+      "title": "优先股相关情况",
+      "printed_page": 41
+    },
+    {
+      "section_label": "第八节",
+      "title": "董事、监事、高级管理人员和员工情况",
+      "printed_page": 42
+    },
+    {
+      "section_label": "第九节",
+      "title": "公司治理",
+      "printed_page": 53
+    },
+    {
+      "section_label": "第十节",
+      "title": "公司债券相关情况",
+      "printed_page": 55
+    },
+    {
+      "section_label": "第十一节",
+      "title": "财务报告",
+      "printed_page": 59
+    },
+    {
+      "section_label": "第十二节",
+      "title": "备查文件目录",
+      "printed_page": 193
+    }
+  ],
+  "top_headings": [
+    {
+      "section_label": "第一节",
+      "title": "释义",
+      "pdf_page": 4,
+      "line": "第一节 释义"
+    },
+    {
+      "section_label": "第二节",
+      "title": "公司简介和主要财务指标",
+      "pdf_page": 4,
+      "line": "第二节 公司简介和主要财务指标"
+    },
+    {
+      "section_label": "第三节",
+      "title": "公司业务概要",
+      "pdf_page": 9,
+      "line": "第三节 公司业务概要"
+    },
+    {
+      "section_label": "第四节",
+      "title": "经营情况讨论与分析",
+      "pdf_page": 12,
+      "line": "第四节 经营情况讨论与分析"
+    },
+    {
+      "section_label": "第五节",
+      "title": "重要事项",
+      "pdf_page": 26,
+      "line": "第五节 重要事项"
+    },
+    {
+      "section_label": "第六节",
+      "title": "普通股股份变动及股东情况",
+      "pdf_page": 36,
+      "line": "第六节 普通股股份变动及股东情况"
+    },
+    {
+      "section_label": "第七节",
+      "title": "优先股相关情况",
+      "pdf_page": 41,
+      "line": "第七节 优先股相关情况"
+    },
+    {
+      "section_label": "第八节",
+      "title": "董事、监事、高级管理人员和员工情况",
+      "pdf_page": 42,
+      "line": "第八节 董事、监事、高级管理人员和员工情况"
+    },
+    {
+      "section_label": "第九节",
+      "title": "公司治理",
+      "pdf_page": 53,
+      "line": "第九节 公司治理"
+    },
+    {
+      "section_label": "第十节",
+      "title": "公司债券相关情况",
+      "pdf_page": 55,
+      "line": "第十节 公司债券相关情况"
+    },
+    {
+      "section_label": "第十一节",
+      "title": "财务报告",
+      "pdf_page": 59,
+      "line": "第十一节 财务报告"
+    },
+    {
+      "section_label": "第十二节",
+      "title": "备查文件目录",
+      "pdf_page": 193,
+      "line": "第十二节 备查文件目录"
+    }
+  ],
+  "toc_validation": {
+    "offset": 0,
+    "matched": 12,
+    "total": 12,
+    "details": [
+      {
+        "section_label": "第一节",
+        "title": "释义",
+        "printed_page": 4,
+        "expected_pdf_page": 4,
+        "actual_pdf_page": 4,
+        "status": "命中"
+      },
+      {
+        "section_label": "第二节",
+        "title": "公司简介和主要财务指标",
+        "printed_page": 4,
+        "expected_pdf_page": 4,
+        "actual_pdf_page": 4,
+        "status": "命中"
+      },
+      {
+        "section_label": "第三节",
+        "title": "公司业务概要",
+        "printed_page": 9,
+        "expected_pdf_page": 9,
+        "actual_pdf_page": 9,
+        "status": "命中"
+      },
+      {
+        "section_label": "第四节",
+        "title": "经营情况讨论与分析",
+        "printed_page": 12,
+        "expected_pdf_page": 12,
+        "actual_pdf_page": 12,
+        "status": "命中"
+      },
+      {
+        "section_label": "第五节",
+        "title": "重要事项",
+        "printed_page": 26,
+        "expected_pdf_page": 26,
+        "actual_pdf_page": 26,
+        "status": "命中"
+      },
+      {
+        "section_label": "第六节",
+        "title": "普通股股份变动及股东情况",
+        "printed_page": 36,
+        "expected_pdf_page": 36,
+        "actual_pdf_page": 36,
+        "status": "命中"
+      },
+      {
+        "section_label": "第七节",
+        "title": "优先股相关情况",
+        "printed_page": 41,
+        "expected_pdf_page": 41,
+        "actual_pdf_page": 41,
+        "status": "命中"
+      },
+      {
+        "section_label": "第八节",
+        "title": "董事、监事、高级管理人员和员工情况",
+        "printed_page": 42,
+        "expected_pdf_page": 42,
+        "actual_pdf_page": 42,
+        "status": "命中"
+      },
+      {
+        "section_label": "第九节",
+        "title": "公司治理",
+        "printed_page": 53,
+        "expected_pdf_page": 53,
+        "actual_pdf_page": 53,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十节",
+        "title": "公司债券相关情况",
+        "printed_page": 55,
+        "expected_pdf_page": 55,
+        "actual_pdf_page": 55,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十一节",
+        "title": "财务报告",
+        "printed_page": 59,
+        "expected_pdf_page": 59,
+        "actual_pdf_page": 59,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十二节",
+        "title": "备查文件目录",
+        "printed_page": 193,
+        "expected_pdf_page": 193,
+        "actual_pdf_page": 193,
+        "status": "命中"
+      }
+    ]
+  },
+  "workbook_directory": {
+    "年份": 2016,
+    "年报标题": "2016年年度报告",
+    "PDF文件": "2017-04-29_2016年年度报告_1203425603.pdf",
+    "页数": 193,
+    "主表页命中": "合并利润表:64,65, 合并现金流量表:66,67,68, 合并资产负债表:60,61,62, 母公司利润表:65,66, 母公司现金流量表:68,69,70, 母公司资产负债表:62,63,64",
+    "主表行数": 244,
+    "附注起始页": 99,
+    "附注行数": 1303,
+    "状态": "成功"
+  },
+  "excel_comparison": {
+    "overall": {
+      "一致": 117,
+      "差异": 0,
+      "未命中": 5
+    },
+    "by_statement": {
+      "利润表": {
+        "compared_rows": 30,
+        "一致": 27,
+        "差异": 0,
+        "未命中": 3
+      },
+      "资产负债表": {
+        "compared_rows": 57,
+        "一致": 56,
+        "差异": 0,
+        "未命中": 1
+      },
+      "现金流量表": {
+        "compared_rows": 35,
+        "一致": 34,
+        "差异": 0,
+        "未命中": 1
+      }
+    },
+    "examples": [
+      {
+        "year": 2016,
+        "statement": "利润表",
+        "item": "其中:非流动资产处置损失",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2016,
+        "statement": "利润表",
+        "item": "每股收益-基本",
+        "status": "未命中",
+        "xls_current": 0.94,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2016,
+        "statement": "利润表",
+        "item": "每股收益-稀释",
+        "status": "未命中",
+        "xls_current": 0.94,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2016,
+        "statement": "资产负债表",
+        "item": "其他应收款(合计):应收股利",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2016,
+        "statement": "现金流量表",
+        "item": "收到其他与筹资活动有关的现金",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      }
+    ]
+  },
+  "datayes_summary": [
+    {
+      "年份": 2016,
+      "校验状态": "与当年PDF一致",
+      "条目数": 107
+    },
+    {
+      "年份": 2016,
+      "校验状态": "与后续年报重述值一致",
+      "条目数": 6
+    },
+    {
+      "年份": 2016,
+      "校验状态": "与Datayes存在差异，保留PDF原值",
+      "条目数": 5
+    }
+  ]
+}

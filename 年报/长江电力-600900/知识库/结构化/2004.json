@@ -1,0 +1,343 @@
+{
+  "year": 2004,
+  "title": "长江电力2004年年度报告",
+  "pdf_file": "2005-03-29_长江电力2004年年度报告_15153217.pdf",
+  "pdf_sha256": "e95796c0aa6954c4c005e84b066b82ec38cb75129a820353f33c92c21cc8e508",
+  "pdf_pages": 77,
+  "median_page_chars": 927,
+  "low_text_pages": [],
+  "toc_entries": [
+    {
+      "section_label": "第一节",
+      "title": "公司基本情况简介",
+      "printed_page": 1
+    },
+    {
+      "section_label": "第二节",
+      "title": "2004 年经营管理概况",
+      "printed_page": 3
+    },
+    {
+      "section_label": "第三节",
+      "title": "会计数据和业务数据摘要",
+      "printed_page": 4
+    },
+    {
+      "section_label": "第四节",
+      "title": "股本变动及股东情况",
+      "printed_page": 6
+    },
+    {
+      "section_label": "第五节",
+      "title": "董事、监事、高级管理人员和员工情况",
+      "printed_page": 9
+    },
+    {
+      "section_label": "第六节",
+      "title": "公司治理结构",
+      "printed_page": 17
+    },
+    {
+      "section_label": "第七节",
+      "title": "股东大会情况简介",
+      "printed_page": 20
+    },
+    {
+      "section_label": "第八节",
+      "title": "董事会报告",
+      "printed_page": 22
+    },
+    {
+      "section_label": "第九节",
+      "title": "监事会报告",
+      "printed_page": 33
+    },
+    {
+      "section_label": "第十节",
+      "title": "重要事项",
+      "printed_page": 36
+    },
+    {
+      "section_label": "第十一节",
+      "title": "财务报告",
+      "printed_page": 40
+    },
+    {
+      "section_label": "第十二节",
+      "title": "备查文件目录",
+      "printed_page": 74
+    }
+  ],
+  "top_headings": [
+    {
+      "section_label": "第一节",
+      "title": "公司基本情况简介",
+      "pdf_page": 4,
+      "line": "第一节 公司基本情况简介"
+    },
+    {
+      "section_label": "第二节",
+      "title": "2004 年经营管理概况",
+      "pdf_page": 6,
+      "line": "第二节 2004 年经营管理概况"
+    },
+    {
+      "section_label": "第三节",
+      "title": "会计数据和业务数据摘要",
+      "pdf_page": 7,
+      "line": "第三节 会计数据和业务数据摘要"
+    },
+    {
+      "section_label": "第四节",
+      "title": "股本变动及股东情况",
+      "pdf_page": 9,
+      "line": "第四节 股本变动及股东情况"
+    },
+    {
+      "section_label": "第五节",
+      "title": "董事、监事、高级管理人员和员工情况",
+      "pdf_page": 12,
+      "line": "第五节 董事、监事、高级管理人员和员工情况"
+    },
+    {
+      "section_label": "第六节",
+      "title": "公司治理结构",
+      "pdf_page": 20,
+      "line": "第六节 公司治理结构"
+    },
+    {
+      "section_label": "第七节",
+      "title": "股东大会情况简介",
+      "pdf_page": 23,
+      "line": "第七节 股东大会情况简介"
+    },
+    {
+      "section_label": "第八节",
+      "title": "董事会报告",
+      "pdf_page": 25,
+      "line": "第八节 董事会报告"
+    },
+    {
+      "section_label": "第九节",
+      "title": "监事会报告",
+      "pdf_page": 36,
+      "line": "第九节 监事会报告"
+    },
+    {
+      "section_label": "第十节",
+      "title": "重要事项",
+      "pdf_page": 39,
+      "line": "第十节 重要事项"
+    },
+    {
+      "section_label": "第十一节",
+      "title": "财务报告",
+      "pdf_page": 43,
+      "line": "第十一节 财务报告"
+    },
+    {
+      "section_label": "第十二节",
+      "title": "备查文件目录",
+      "pdf_page": 77,
+      "line": "第十二节 备查文件目录"
+    }
+  ],
+  "toc_validation": {
+    "offset": 3,
+    "matched": 12,
+    "total": 12,
+    "details": [
+      {
+        "section_label": "第一节",
+        "title": "公司基本情况简介",
+        "printed_page": 1,
+        "expected_pdf_page": 4,
+        "actual_pdf_page": 4,
+        "status": "命中"
+      },
+      {
+        "section_label": "第二节",
+        "title": "2004 年经营管理概况",
+        "printed_page": 3,
+        "expected_pdf_page": 6,
+        "actual_pdf_page": 6,
+        "status": "命中"
+      },
+      {
+        "section_label": "第三节",
+        "title": "会计数据和业务数据摘要",
+        "printed_page": 4,
+        "expected_pdf_page": 7,
+        "actual_pdf_page": 7,
+        "status": "命中"
+      },
+      {
+        "section_label": "第四节",
+        "title": "股本变动及股东情况",
+        "printed_page": 6,
+        "expected_pdf_page": 9,
+        "actual_pdf_page": 9,
+        "status": "命中"
+      },
+      {
+        "section_label": "第五节",
+        "title": "董事、监事、高级管理人员和员工情况",
+        "printed_page": 9,
+        "expected_pdf_page": 12,
+        "actual_pdf_page": 12,
+        "status": "命中"
+      },
+      {
+        "section_label": "第六节",
+        "title": "公司治理结构",
+        "printed_page": 17,
+        "expected_pdf_page": 20,
+        "actual_pdf_page": 20,
+        "status": "命中"
+      },
+      {
+        "section_label": "第七节",
+        "title": "股东大会情况简介",
+        "printed_page": 20,
+        "expected_pdf_page": 23,
+        "actual_pdf_page": 23,
+        "status": "命中"
+      },
+      {
+        "section_label": "第八节",
+        "title": "董事会报告",
+        "printed_page": 22,
+        "expected_pdf_page": 25,
+        "actual_pdf_page": 25,
+        "status": "命中"
+      },
+      {
+        "section_label": "第九节",
+        "title": "监事会报告",
+        "printed_page": 33,
+        "expected_pdf_page": 36,
+        "actual_pdf_page": 36,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十节",
+        "title": "重要事项",
+        "printed_page": 36,
+        "expected_pdf_page": 39,
+        "actual_pdf_page": 39,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十一节",
+        "title": "财务报告",
+        "printed_page": 40,
+        "expected_pdf_page": 43,
+        "actual_pdf_page": 43,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十二节",
+        "title": "备查文件目录",
+        "printed_page": 74,
+        "expected_pdf_page": 77,
+        "actual_pdf_page": 77,
+        "status": "命中"
+      }
+    ]
+  },
+  "workbook_directory": {
+    "年份": 2004,
+    "年报标题": "长江电力2004年年度报告",
+    "PDF文件": "2005-03-29_长江电力2004年年度报告_15153217.pdf",
+    "页数": 77,
+    "主表页命中": "利润表:46, 现金流量表:47,48, 资产负债表:44,45",
+    "主表行数": 130,
+    "附注起始页": 49,
+    "附注行数": 480,
+    "状态": "成功"
+  },
+  "excel_comparison": {
+    "overall": {
+      "一致": 95,
+      "差异": 0,
+      "未命中": 6
+    },
+    "by_statement": {
+      "利润表": {
+        "compared_rows": 19,
+        "一致": 19,
+        "差异": 0,
+        "未命中": 0
+      },
+      "资产负债表": {
+        "compared_rows": 41,
+        "一致": 39,
+        "差异": 0,
+        "未命中": 2
+      },
+      "现金流量表": {
+        "compared_rows": 41,
+        "一致": 37,
+        "差异": 0,
+        "未命中": 4
+      }
+    },
+    "examples": [
+      {
+        "year": 2004,
+        "statement": "资产负债表",
+        "item": "其他应收款(合计):应收利息",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2004,
+        "statement": "资产负债表",
+        "item": "一年内到期的非流动负债",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2004,
+        "statement": "现金流量表",
+        "item": "吸收投资收到的现金",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2004,
+        "statement": "现金流量表",
+        "item": "取得借款收到的现金",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2004,
+        "statement": "现金流量表",
+        "item": "筹资活动现金流入的差错金额",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2004,
+        "statement": "现金流量表",
+        "item": "支付其他与筹资活动有关的现金",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      }
+    ]
+  },
+  "datayes_summary": []
+}

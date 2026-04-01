@@ -1,0 +1,316 @@
+{
+  "year": 2003,
+  "title": "长江电力2003年年度报告",
+  "pdf_file": "2004-03-31_长江电力2003年年度报告_13856145.pdf",
+  "pdf_sha256": "112c3dfe1cb071af3dafd8ee01fad7febc3b9ac81b909c563bd0bf9a0f10becc",
+  "pdf_pages": 77,
+  "median_page_chars": 913,
+  "low_text_pages": [],
+  "toc_entries": [
+    {
+      "section_label": "第一节",
+      "title": "公司基本情况简介",
+      "printed_page": 1
+    },
+    {
+      "section_label": "第二节",
+      "title": "2003 年经营管理概况",
+      "printed_page": 3
+    },
+    {
+      "section_label": "第三节",
+      "title": "会计数据和业务数据摘要",
+      "printed_page": 5
+    },
+    {
+      "section_label": "第四节",
+      "title": "股本变动及股东情况",
+      "printed_page": 7
+    },
+    {
+      "section_label": "第五节",
+      "title": "董事、监事、高级管理人员和员工情况",
+      "printed_page": 11
+    },
+    {
+      "section_label": "第六节",
+      "title": "公司治理结构",
+      "printed_page": 14
+    },
+    {
+      "section_label": "第七节",
+      "title": "股东大会情况简介",
+      "printed_page": 17
+    },
+    {
+      "section_label": "第八节",
+      "title": "董事会报告",
+      "printed_page": 19
+    },
+    {
+      "section_label": "第九节",
+      "title": "监事会报告",
+      "printed_page": 32
+    },
+    {
+      "section_label": "第十节",
+      "title": "重要事项",
+      "printed_page": 35
+    },
+    {
+      "section_label": "第十一节",
+      "title": "财务报告",
+      "printed_page": 40
+    },
+    {
+      "section_label": "第十二节",
+      "title": "备查文件目录",
+      "printed_page": 72
+    }
+  ],
+  "top_headings": [
+    {
+      "section_label": "第一节",
+      "title": "公司基本情况简介",
+      "pdf_page": 6,
+      "line": "第一节 公司基本情况简介"
+    },
+    {
+      "section_label": "第二节",
+      "title": "2003 年经营管理概况",
+      "pdf_page": 8,
+      "line": "第二节 2003 年经营管理概况"
+    },
+    {
+      "section_label": "第三节",
+      "title": "会计数据和业务数据摘要",
+      "pdf_page": 10,
+      "line": "第三节 会计数据和业务数据摘要"
+    },
+    {
+      "section_label": "第四节",
+      "title": "股本变动及股东情况",
+      "pdf_page": 12,
+      "line": "第四节 股本变动及股东情况"
+    },
+    {
+      "section_label": "第五节",
+      "title": "董事、监事、高级管理人员和员工情况",
+      "pdf_page": 16,
+      "line": "第五节 董事、监事、高级管理人员和员工情况"
+    },
+    {
+      "section_label": "第六节",
+      "title": "公司治理结构",
+      "pdf_page": 19,
+      "line": "第六节 公司治理结构"
+    },
+    {
+      "section_label": "第七节",
+      "title": "股东大会情况简介",
+      "pdf_page": 22,
+      "line": "第七节 股东大会情况简介"
+    },
+    {
+      "section_label": "第八节",
+      "title": "董事会报告",
+      "pdf_page": 24,
+      "line": "第八节 董事会报告"
+    },
+    {
+      "section_label": "第九节",
+      "title": "监事会报告",
+      "pdf_page": 37,
+      "line": "第九节 监事会报告"
+    },
+    {
+      "section_label": "第十节",
+      "title": "重要事项",
+      "pdf_page": 40,
+      "line": "第十节 重要事项"
+    },
+    {
+      "section_label": "第十一节",
+      "title": "财务报告",
+      "pdf_page": 45,
+      "line": "第十一节 财务报告"
+    },
+    {
+      "section_label": "第十二节",
+      "title": "备查文件目录",
+      "pdf_page": 77,
+      "line": "第十二节 备查文件目录"
+    }
+  ],
+  "toc_validation": {
+    "offset": 5,
+    "matched": 12,
+    "total": 12,
+    "details": [
+      {
+        "section_label": "第一节",
+        "title": "公司基本情况简介",
+        "printed_page": 1,
+        "expected_pdf_page": 6,
+        "actual_pdf_page": 6,
+        "status": "命中"
+      },
+      {
+        "section_label": "第二节",
+        "title": "2003 年经营管理概况",
+        "printed_page": 3,
+        "expected_pdf_page": 8,
+        "actual_pdf_page": 8,
+        "status": "命中"
+      },
+      {
+        "section_label": "第三节",
+        "title": "会计数据和业务数据摘要",
+        "printed_page": 5,
+        "expected_pdf_page": 10,
+        "actual_pdf_page": 10,
+        "status": "命中"
+      },
+      {
+        "section_label": "第四节",
+        "title": "股本变动及股东情况",
+        "printed_page": 7,
+        "expected_pdf_page": 12,
+        "actual_pdf_page": 12,
+        "status": "命中"
+      },
+      {
+        "section_label": "第五节",
+        "title": "董事、监事、高级管理人员和员工情况",
+        "printed_page": 11,
+        "expected_pdf_page": 16,
+        "actual_pdf_page": 16,
+        "status": "命中"
+      },
+      {
+        "section_label": "第六节",
+        "title": "公司治理结构",
+        "printed_page": 14,
+        "expected_pdf_page": 19,
+        "actual_pdf_page": 19,
+        "status": "命中"
+      },
+      {
+        "section_label": "第七节",
+        "title": "股东大会情况简介",
+        "printed_page": 17,
+        "expected_pdf_page": 22,
+        "actual_pdf_page": 22,
+        "status": "命中"
+      },
+      {
+        "section_label": "第八节",
+        "title": "董事会报告",
+        "printed_page": 19,
+        "expected_pdf_page": 24,
+        "actual_pdf_page": 24,
+        "status": "命中"
+      },
+      {
+        "section_label": "第九节",
+        "title": "监事会报告",
+        "printed_page": 32,
+        "expected_pdf_page": 37,
+        "actual_pdf_page": 37,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十节",
+        "title": "重要事项",
+        "printed_page": 35,
+        "expected_pdf_page": 40,
+        "actual_pdf_page": 40,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十一节",
+        "title": "财务报告",
+        "printed_page": 40,
+        "expected_pdf_page": 45,
+        "actual_pdf_page": 45,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十二节",
+        "title": "备查文件目录",
+        "printed_page": 72,
+        "expected_pdf_page": 77,
+        "actual_pdf_page": 77,
+        "status": "命中"
+      }
+    ]
+  },
+  "workbook_directory": {
+    "年份": 2003,
+    "年报标题": "长江电力2003年年度报告",
+    "PDF文件": "2004-03-31_长江电力2003年年度报告_13856145.pdf",
+    "页数": 77,
+    "主表页命中": "利润表:48, 现金流量表:49,50,51,52, 资产负债表:46,47",
+    "主表行数": 159,
+    "附注起始页": 53,
+    "附注行数": 471,
+    "状态": "成功"
+  },
+  "excel_comparison": {
+    "overall": {
+      "一致": 98,
+      "差异": 0,
+      "未命中": 3
+    },
+    "by_statement": {
+      "利润表": {
+        "compared_rows": 19,
+        "一致": 19,
+        "差异": 0,
+        "未命中": 0
+      },
+      "资产负债表": {
+        "compared_rows": 43,
+        "一致": 40,
+        "差异": 0,
+        "未命中": 3
+      },
+      "现金流量表": {
+        "compared_rows": 39,
+        "一致": 39,
+        "差异": 0,
+        "未命中": 0
+      }
+    },
+    "examples": [
+      {
+        "year": 2003,
+        "statement": "资产负债表",
+        "item": "其他应收款(合计):应收股利",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2003,
+        "statement": "资产负债表",
+        "item": "非流动负债的特殊项目",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2003,
+        "statement": "资产负债表",
+        "item": "归属于母公司所有者权益的特殊项目",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      }
+    ]
+  },
+  "datayes_summary": []
+}

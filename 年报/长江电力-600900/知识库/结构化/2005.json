@@ -1,0 +1,316 @@
+{
+  "year": 2005,
+  "title": "G 长  电2005年年度报告",
+  "pdf_file": "2006-03-28_G_长_电2005年年度报告_16620713.pdf",
+  "pdf_sha256": "5a92c5241b4c1b231d4618437aff225a9515c15088a4db348ac1ce2eba83db78",
+  "pdf_pages": 84,
+  "median_page_chars": 890.5,
+  "low_text_pages": [],
+  "toc_entries": [
+    {
+      "section_label": "第一节",
+      "title": "公司基本情况简介",
+      "printed_page": 1
+    },
+    {
+      "section_label": "第二节",
+      "title": "会计数据和业务数据摘要",
+      "printed_page": 4
+    },
+    {
+      "section_label": "第三节",
+      "title": "股本变动及股东情况",
+      "printed_page": 6
+    },
+    {
+      "section_label": "第四节",
+      "title": "董事、监事、高级管理人员和员工情况",
+      "printed_page": 11
+    },
+    {
+      "section_label": "第五节",
+      "title": "公司治理结构",
+      "printed_page": 17
+    },
+    {
+      "section_label": "第六节",
+      "title": "股东大会情况简介",
+      "printed_page": 20
+    },
+    {
+      "section_label": "第七节",
+      "title": "董事会报告",
+      "printed_page": 21
+    },
+    {
+      "section_label": "第八节",
+      "title": "监事会报告",
+      "printed_page": 31
+    },
+    {
+      "section_label": "第九节",
+      "title": "重要事项",
+      "printed_page": 35
+    },
+    {
+      "section_label": "第十节",
+      "title": "社会责任",
+      "printed_page": 40
+    },
+    {
+      "section_label": "第十一节",
+      "title": "财务报告",
+      "printed_page": 44
+    },
+    {
+      "section_label": "第十二节",
+      "title": "备查文件目录",
+      "printed_page": 81
+    }
+  ],
+  "top_headings": [
+    {
+      "section_label": "第一节",
+      "title": "公司基本情况简介",
+      "pdf_page": 4,
+      "line": "第一节 公司基本情况简介"
+    },
+    {
+      "section_label": "第二节",
+      "title": "会计数据和业务数据摘要",
+      "pdf_page": 7,
+      "line": "第二节 会计数据和业务数据摘要"
+    },
+    {
+      "section_label": "第三节",
+      "title": "股本变动及股东情况",
+      "pdf_page": 9,
+      "line": "第三节 股本变动及股东情况"
+    },
+    {
+      "section_label": "第四节",
+      "title": "董事、监事、高级管理人员和员工情况",
+      "pdf_page": 14,
+      "line": "第四节 董事、监事、高级管理人员和员工情况"
+    },
+    {
+      "section_label": "第五节",
+      "title": "公司治理结构",
+      "pdf_page": 20,
+      "line": "第五节 公司治理结构"
+    },
+    {
+      "section_label": "第六节",
+      "title": "股东大会情况简介",
+      "pdf_page": 23,
+      "line": "第六节 股东大会情况简介"
+    },
+    {
+      "section_label": "第七节",
+      "title": "董事会报告",
+      "pdf_page": 24,
+      "line": "第七节 董事会报告"
+    },
+    {
+      "section_label": "第八节",
+      "title": "监事会报告",
+      "pdf_page": 34,
+      "line": "第八节 监事会报告"
+    },
+    {
+      "section_label": "第九节",
+      "title": "重要事项",
+      "pdf_page": 38,
+      "line": "第九节 重要事项"
+    },
+    {
+      "section_label": "第十节",
+      "title": "社会责任",
+      "pdf_page": 43,
+      "line": "第十节 社会责任"
+    },
+    {
+      "section_label": "第十一节",
+      "title": "财务报告",
+      "pdf_page": 47,
+      "line": "第十一节 财务报告"
+    },
+    {
+      "section_label": "第十二节",
+      "title": "备查文件目录",
+      "pdf_page": 84,
+      "line": "第十二节 备查文件目录"
+    }
+  ],
+  "toc_validation": {
+    "offset": 3,
+    "matched": 12,
+    "total": 12,
+    "details": [
+      {
+        "section_label": "第一节",
+        "title": "公司基本情况简介",
+        "printed_page": 1,
+        "expected_pdf_page": 4,
+        "actual_pdf_page": 4,
+        "status": "命中"
+      },
+      {
+        "section_label": "第二节",
+        "title": "会计数据和业务数据摘要",
+        "printed_page": 4,
+        "expected_pdf_page": 7,
+        "actual_pdf_page": 7,
+        "status": "命中"
+      },
+      {
+        "section_label": "第三节",
+        "title": "股本变动及股东情况",
+        "printed_page": 6,
+        "expected_pdf_page": 9,
+        "actual_pdf_page": 9,
+        "status": "命中"
+      },
+      {
+        "section_label": "第四节",
+        "title": "董事、监事、高级管理人员和员工情况",
+        "printed_page": 11,
+        "expected_pdf_page": 14,
+        "actual_pdf_page": 14,
+        "status": "命中"
+      },
+      {
+        "section_label": "第五节",
+        "title": "公司治理结构",
+        "printed_page": 17,
+        "expected_pdf_page": 20,
+        "actual_pdf_page": 20,
+        "status": "命中"
+      },
+      {
+        "section_label": "第六节",
+        "title": "股东大会情况简介",
+        "printed_page": 20,
+        "expected_pdf_page": 23,
+        "actual_pdf_page": 23,
+        "status": "命中"
+      },
+      {
+        "section_label": "第七节",
+        "title": "董事会报告",
+        "printed_page": 21,
+        "expected_pdf_page": 24,
+        "actual_pdf_page": 24,
+        "status": "命中"
+      },
+      {
+        "section_label": "第八节",
+        "title": "监事会报告",
+        "printed_page": 31,
+        "expected_pdf_page": 34,
+        "actual_pdf_page": 34,
+        "status": "命中"
+      },
+      {
+        "section_label": "第九节",
+        "title": "重要事项",
+        "printed_page": 35,
+        "expected_pdf_page": 38,
+        "actual_pdf_page": 38,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十节",
+        "title": "社会责任",
+        "printed_page": 40,
+        "expected_pdf_page": 43,
+        "actual_pdf_page": 43,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十一节",
+        "title": "财务报告",
+        "printed_page": 44,
+        "expected_pdf_page": 47,
+        "actual_pdf_page": 47,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十二节",
+        "title": "备查文件目录",
+        "printed_page": 81,
+        "expected_pdf_page": 84,
+        "actual_pdf_page": 84,
+        "status": "命中"
+      }
+    ]
+  },
+  "workbook_directory": {
+    "年份": 2005,
+    "年报标题": "G 长  电2005年年度报告",
+    "PDF文件": "2006-03-28_G_长_电2005年年度报告_16620713.pdf",
+    "页数": 84,
+    "主表页命中": "利润表:50,51, 现金流量表:51,52, 资产负债表:48,49,50",
+    "主表行数": 131,
+    "附注起始页": 53,
+    "附注行数": 495,
+    "状态": "成功"
+  },
+  "excel_comparison": {
+    "overall": {
+      "一致": 95,
+      "差异": 0,
+      "未命中": 3
+    },
+    "by_statement": {
+      "利润表": {
+        "compared_rows": 19,
+        "一致": 19,
+        "差异": 0,
+        "未命中": 0
+      },
+      "资产负债表": {
+        "compared_rows": 40,
+        "一致": 39,
+        "差异": 0,
+        "未命中": 1
+      },
+      "现金流量表": {
+        "compared_rows": 39,
+        "一致": 37,
+        "差异": 0,
+        "未命中": 2
+      }
+    },
+    "examples": [
+      {
+        "year": 2005,
+        "statement": "资产负债表",
+        "item": "预收款项",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2005,
+        "statement": "现金流量表",
+        "item": "收到其他与投资活动有关的现金",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2005,
+        "statement": "现金流量表",
+        "item": "支付其他与投资活动有关的现金",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      }
+    ]
+  },
+  "datayes_summary": []
+}

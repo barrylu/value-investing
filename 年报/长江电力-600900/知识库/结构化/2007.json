@@ -1,0 +1,297 @@
+{
+  "year": 2007,
+  "title": "2007年年度报告",
+  "pdf_file": "2008-04-26_2007年年度报告_39197439.pdf",
+  "pdf_sha256": "658bb47d7683ca624cd829f0831cc5c44bd1fcf1a4802fa817e33e612cef3f13",
+  "pdf_pages": 119,
+  "median_page_chars": 997,
+  "low_text_pages": [],
+  "toc_entries": [
+    {
+      "section_label": "第一节",
+      "title": "公司基本情况简介",
+      "printed_page": 1
+    },
+    {
+      "section_label": "第二节",
+      "title": "会计数据和业务数据摘要",
+      "printed_page": 4
+    },
+    {
+      "section_label": "第三节",
+      "title": "股本变动及股东情况",
+      "printed_page": 6
+    },
+    {
+      "section_label": "第四节",
+      "title": "董事、监事、高级管理人员和员工情况",
+      "printed_page": 11
+    },
+    {
+      "section_label": "第五节",
+      "title": "公司治理",
+      "printed_page": 18
+    },
+    {
+      "section_label": "第六节",
+      "title": "股东大会情况简介",
+      "printed_page": 23
+    },
+    {
+      "section_label": "第七节",
+      "title": "董事会报告",
+      "printed_page": 25
+    },
+    {
+      "section_label": "第八节",
+      "title": "监事会报告",
+      "printed_page": 43
+    },
+    {
+      "section_label": "第九节",
+      "title": "重要事项",
+      "printed_page": 48
+    },
+    {
+      "section_label": "第十节",
+      "title": "社会责任",
+      "printed_page": 58
+    },
+    {
+      "section_label": "第十一节",
+      "title": "财务报告",
+      "printed_page": 65
+    }
+  ],
+  "top_headings": [
+    {
+      "section_label": "第一节",
+      "title": "公司基本情况简介",
+      "pdf_page": 4,
+      "line": "第一节 公司基本情况简介"
+    },
+    {
+      "section_label": "第二节",
+      "title": "会计数据和业务数据摘要",
+      "pdf_page": 7,
+      "line": "第二节 会计数据和业务数据摘要"
+    },
+    {
+      "section_label": "第三节",
+      "title": "股本变动及股东情况",
+      "pdf_page": 9,
+      "line": "第三节 股本变动及股东情况"
+    },
+    {
+      "section_label": "第四节",
+      "title": "董事、监事、高级管理人员和员工情况",
+      "pdf_page": 14,
+      "line": "第四节 董事、监事、高级管理人员和员工情况"
+    },
+    {
+      "section_label": "第五节",
+      "title": "公司治理",
+      "pdf_page": 21,
+      "line": "第五节 公司治理"
+    },
+    {
+      "section_label": "第六节",
+      "title": "股东大会情况简介",
+      "pdf_page": 26,
+      "line": "第六节 股东大会情况简介"
+    },
+    {
+      "section_label": "第七节",
+      "title": "董事会报告",
+      "pdf_page": 28,
+      "line": "第七节 董事会报告"
+    },
+    {
+      "section_label": "第八节",
+      "title": "监事会报告",
+      "pdf_page": 46,
+      "line": "第八节 监事会报告"
+    },
+    {
+      "section_label": "第九节",
+      "title": "重要事项",
+      "pdf_page": 51,
+      "line": "第九节 重要事项"
+    },
+    {
+      "section_label": "第十节",
+      "title": "社会责任",
+      "pdf_page": 61,
+      "line": "第十节 社会责任"
+    },
+    {
+      "section_label": "第十一节",
+      "title": "财务报告",
+      "pdf_page": 68,
+      "line": "第十一节 财务报告"
+    }
+  ],
+  "toc_validation": {
+    "offset": 3,
+    "matched": 11,
+    "total": 11,
+    "details": [
+      {
+        "section_label": "第一节",
+        "title": "公司基本情况简介",
+        "printed_page": 1,
+        "expected_pdf_page": 4,
+        "actual_pdf_page": 4,
+        "status": "命中"
+      },
+      {
+        "section_label": "第二节",
+        "title": "会计数据和业务数据摘要",
+        "printed_page": 4,
+        "expected_pdf_page": 7,
+        "actual_pdf_page": 7,
+        "status": "命中"
+      },
+      {
+        "section_label": "第三节",
+        "title": "股本变动及股东情况",
+        "printed_page": 6,
+        "expected_pdf_page": 9,
+        "actual_pdf_page": 9,
+        "status": "命中"
+      },
+      {
+        "section_label": "第四节",
+        "title": "董事、监事、高级管理人员和员工情况",
+        "printed_page": 11,
+        "expected_pdf_page": 14,
+        "actual_pdf_page": 14,
+        "status": "命中"
+      },
+      {
+        "section_label": "第五节",
+        "title": "公司治理",
+        "printed_page": 18,
+        "expected_pdf_page": 21,
+        "actual_pdf_page": 21,
+        "status": "命中"
+      },
+      {
+        "section_label": "第六节",
+        "title": "股东大会情况简介",
+        "printed_page": 23,
+        "expected_pdf_page": 26,
+        "actual_pdf_page": 26,
+        "status": "命中"
+      },
+      {
+        "section_label": "第七节",
+        "title": "董事会报告",
+        "printed_page": 25,
+        "expected_pdf_page": 28,
+        "actual_pdf_page": 28,
+        "status": "命中"
+      },
+      {
+        "section_label": "第八节",
+        "title": "监事会报告",
+        "printed_page": 43,
+        "expected_pdf_page": 46,
+        "actual_pdf_page": 46,
+        "status": "命中"
+      },
+      {
+        "section_label": "第九节",
+        "title": "重要事项",
+        "printed_page": 48,
+        "expected_pdf_page": 51,
+        "actual_pdf_page": 51,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十节",
+        "title": "社会责任",
+        "printed_page": 58,
+        "expected_pdf_page": 61,
+        "actual_pdf_page": 61,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十一节",
+        "title": "财务报告",
+        "printed_page": 65,
+        "expected_pdf_page": 68,
+        "actual_pdf_page": 68,
+        "status": "命中"
+      }
+    ]
+  },
+  "workbook_directory": {
+    "年份": 2007,
+    "年报标题": "2007年年度报告",
+    "PDF文件": "2008-04-26_2007年年度报告_39197439.pdf",
+    "页数": 119,
+    "主表页命中": "利润表:71,72, 现金流量表:72, 资产负债表:69,70,71",
+    "主表行数": 101,
+    "附注起始页": 75,
+    "附注行数": 864,
+    "状态": "成功"
+  },
+  "excel_comparison": {
+    "overall": {
+      "一致": 89,
+      "差异": 0,
+      "未命中": 3
+    },
+    "by_statement": {
+      "利润表": {
+        "compared_rows": 22,
+        "一致": 19,
+        "差异": 0,
+        "未命中": 3
+      },
+      "资产负债表": {
+        "compared_rows": 41,
+        "一致": 41,
+        "差异": 0,
+        "未命中": 0
+      },
+      "现金流量表": {
+        "compared_rows": 29,
+        "一致": 29,
+        "差异": 0,
+        "未命中": 0
+      }
+    },
+    "examples": [
+      {
+        "year": 2007,
+        "statement": "利润表",
+        "item": "公允价值变动收益",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2007,
+        "statement": "利润表",
+        "item": "每股收益-基本",
+        "status": "未命中",
+        "xls_current": 0.6,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2007,
+        "statement": "利润表",
+        "item": "每股收益-稀释",
+        "status": "未命中",
+        "xls_current": 0.58,
+        "pdf_item": "",
+        "pdf_current": null
+      }
+    ]
+  },
+  "datayes_summary": []
+}

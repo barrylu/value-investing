@@ -1,0 +1,47 @@
+[
+  {
+    "year": 2022,
+    "title": "中国海洋石油有限公司2022年年度报告",
+    "disclosure_date": "2023-03-30",
+    "pdf_file": "2023-03-30_中国海洋石油有限公司2022年年度报告_1216259494.pdf",
+    "markdown_file": "2022-中国海洋石油有限公司2022年年度报告.md",
+    "structured_file": "2022.json",
+    "page_count": 267,
+    "low_text_pages": [
+      1
+    ],
+    "plain_fallback_pages": 0,
+    "heading_count": 0,
+    "sha256": "9f7c3f29f61fb7e9c03e0ff9da281d9ffe23adcf4a9525abdb2a80cbe54969ae"
+  },
+  {
+    "year": 2023,
+    "title": "中国海洋石油有限公司2023年年度报告",
+    "disclosure_date": "2024-03-22",
+    "pdf_file": "2024-03-22_中国海洋石油有限公司2023年年度报告_1219375212.pdf",
+    "markdown_file": "2023-中国海洋石油有限公司2023年年度报告.md",
+    "structured_file": "2023.json",
+    "page_count": 270,
+    "low_text_pages": [
+      1
+    ],
+    "plain_fallback_pages": 0,
+    "heading_count": 0,
+    "sha256": "d1d6dba5b52882d7c6d9d46913edb14378c8a32bc4e8e4de794337baa185e8f5"
+  },
+  {
+    "year": 2024,
+    "title": "中国海洋石油有限公司2024年年度报告",
+    "disclosure_date": "2025-03-28",
+    "pdf_file": "2025-03-28_中国海洋石油有限公司2024年年度报告_1222929636.pdf",
+    "markdown_file": "2024-中国海洋石油有限公司2024年年度报告.md",
+    "structured_file": "2024.json",
+    "page_count": 244,
+    "low_text_pages": [
+      1
+    ],
+    "plain_fallback_pages": 0,
+    "heading_count": 0,
+    "sha256": "802b2139219c681fc2d7a3c9360ca9ff36defe4f54dee9cf5e67336f42ed48ce"
+  }
+]

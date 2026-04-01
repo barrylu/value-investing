@@ -31,3 +31,21 @@ value-investing/
 项目已提供独立虚拟环境方案，推荐在 `value-investing/.venv` 中安装和运行数据分析工具，避免影响系统 Python。
 
 使用说明与示例见 **Python-虚拟环境使用指南.md**。
+
+## 已搭建的基础分析工具
+
+`scripts/` 下目前已经补齐以下基础工具：
+
+- `compute_financial_ratios.py`：基于 Datayes 标准化 CSV 计算财务比率、输出 Excel 和年度趋势图
+- `build_valuation_model.py`：读取年度比率结果，生成 DCF 估值报告和敏感性矩阵
+- `download_akshare_finance.py`：用 AKShare 下载免费财务数据，作为 Datayes 的备份/补充来源
+- `plot_interactive_charts.py`：把年度财务比率结果输出为交互式 HTML 仪表盘
+- `compare_peers.py`：读取多个公司的年度比率结果，生成同行横向对比表
+
+典型使用顺序：
+
+1. 先准备好 `年报/[公司]/萝卜投研-财务页下载/整理/csv/`
+2. 运行 `compute_financial_ratios.py`
+3. 再运行 `build_valuation_model.py` 或 `plot_interactive_charts.py`
+4. 需要数据备份时运行 `download_akshare_finance.py`
+5. 需要横向对比时运行 `compare_peers.py`

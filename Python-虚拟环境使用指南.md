@@ -7,7 +7,7 @@
 在项目目录下执行：
 
 ```bash
-cd /Users/luzuoguan/ai/value-investing
+cd /Users/luzuoguan/WorkBuddy/Claw/value-investing
 source .venv/bin/activate
 ```
 
@@ -15,15 +15,18 @@ source .venv/bin/activate
 
 ## 2. 已安装的常用包
 
-本环境用于资料整理、数据处理、研究分析与基础开发，包含：
+本环境用于资料整理、数据处理、研究分析与基础开发，当前常用包包括：
 
 ```text
 pandas
 numpy
 matplotlib
-jupyter
 openpyxl
 requests
+plotly
+kaleido
+akshare
+jupyter
 pytest
 ruff
 black
@@ -110,15 +113,18 @@ print(resp.text[:200])
 ## 5. 推荐工作流
 
 1. 进入项目目录并激活 `.venv`
-2. 用 `python` 或 `jupyter notebook` 做数据整理和分析
-3. 写完脚本后用 `ruff check .` 和 `black .` 做基础整理
-4. 需要退出时执行 `deactivate`
+2. 准备好 `年报/[公司]/萝卜投研-财务页下载/整理/csv/` 数据
+3. 先运行 `scripts/compute_financial_ratios.py` 生成年度比率
+4. 再运行 `scripts/build_valuation_model.py` 或 `scripts/plot_interactive_charts.py`
+5. 需要免费备份数据源时运行 `scripts/download_akshare_finance.py`
+6. 写完脚本后用 `ruff check .` 和 `black .` 做基础整理
+7. 需要退出时执行 `deactivate`
 
 ## 6. 不想手动激活时
 
 也可以直接使用虚拟环境里的命令：
 
 ```bash
-/Users/luzuoguan/ai/value-investing/.venv/bin/python script.py
-/Users/luzuoguan/ai/value-investing/.venv/bin/jupyter notebook
+/Users/luzuoguan/WorkBuddy/Claw/value-investing/.venv/bin/python script.py
+/Users/luzuoguan/WorkBuddy/Claw/value-investing/.venv/bin/jupyter notebook
 ```

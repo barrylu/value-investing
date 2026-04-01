@@ -1,0 +1,339 @@
+{
+  "year": 2022,
+  "title": "长江电力2022年年度报告",
+  "pdf_file": "2023-04-28_长江电力2022年年度报告_1216664110.pdf",
+  "pdf_sha256": "3378a0ab9893d296ef9227131034dd6f011c5705493dd56f638ce2b39b06d2aa",
+  "pdf_pages": 236,
+  "median_page_chars": 918.0,
+  "low_text_pages": [],
+  "toc_entries": [
+    {
+      "section_label": "第一节",
+      "title": "释义",
+      "printed_page": 5
+    },
+    {
+      "section_label": "第二节",
+      "title": "公司简介和主要财务指标",
+      "printed_page": 5
+    },
+    {
+      "section_label": "第三节",
+      "title": "管理层讨论与分析",
+      "printed_page": 9
+    },
+    {
+      "section_label": "第四节",
+      "title": "公司治理",
+      "printed_page": 27
+    },
+    {
+      "section_label": "第五节",
+      "title": "环境与社会责任",
+      "printed_page": 48
+    },
+    {
+      "section_label": "第六节",
+      "title": "重要事项",
+      "printed_page": 51
+    },
+    {
+      "section_label": "第七节",
+      "title": "股份变动及股东情况",
+      "printed_page": 63
+    },
+    {
+      "section_label": "第八节",
+      "title": "优先股相关情况",
+      "printed_page": 68
+    },
+    {
+      "section_label": "第九节",
+      "title": "债券相关情况",
+      "printed_page": 69
+    },
+    {
+      "section_label": "第十节",
+      "title": "财务报告",
+      "printed_page": 84
+    },
+    {
+      "section_label": "",
+      "title": "备查文件目录",
+      "printed_page": null
+    }
+  ],
+  "top_headings": [
+    {
+      "section_label": "第一节",
+      "title": "释义",
+      "pdf_page": 5,
+      "line": "第一节 释义"
+    },
+    {
+      "section_label": "第二节",
+      "title": "公司简介和主要财务指标",
+      "pdf_page": 5,
+      "line": "第二节 公司简介和主要财务指标"
+    },
+    {
+      "section_label": "第三节",
+      "title": "管理层讨论与分析",
+      "pdf_page": 9,
+      "line": "第三节 管理层讨论与分析"
+    },
+    {
+      "section_label": "第四节",
+      "title": "公司治理",
+      "pdf_page": 27,
+      "line": "第四节 公司治理"
+    },
+    {
+      "section_label": "第五节",
+      "title": "环境与社会责任",
+      "pdf_page": 48,
+      "line": "第五节 环境与社会责任"
+    },
+    {
+      "section_label": "第六节",
+      "title": "重要事项",
+      "pdf_page": 52,
+      "line": "第六节 重要事项"
+    },
+    {
+      "section_label": "第七节",
+      "title": "股份变动及股东情况",
+      "pdf_page": 63,
+      "line": "第七节 股份变动及股东情况"
+    },
+    {
+      "section_label": "第八节",
+      "title": "优先股相关情况",
+      "pdf_page": 68,
+      "line": "第八节 优先股相关情况"
+    },
+    {
+      "section_label": "第九节",
+      "title": "债券相关情况",
+      "pdf_page": 69,
+      "line": "第九节 债券相关情况"
+    },
+    {
+      "section_label": "第十节",
+      "title": "财务报告",
+      "pdf_page": 84,
+      "line": "第十节 财务报告"
+    }
+  ],
+  "toc_validation": {
+    "offset": 0,
+    "matched": 10,
+    "total": 10,
+    "details": [
+      {
+        "section_label": "第一节",
+        "title": "释义",
+        "printed_page": 5,
+        "expected_pdf_page": 5,
+        "actual_pdf_page": 5,
+        "status": "命中"
+      },
+      {
+        "section_label": "第二节",
+        "title": "公司简介和主要财务指标",
+        "printed_page": 5,
+        "expected_pdf_page": 5,
+        "actual_pdf_page": 5,
+        "status": "命中"
+      },
+      {
+        "section_label": "第三节",
+        "title": "管理层讨论与分析",
+        "printed_page": 9,
+        "expected_pdf_page": 9,
+        "actual_pdf_page": 9,
+        "status": "命中"
+      },
+      {
+        "section_label": "第四节",
+        "title": "公司治理",
+        "printed_page": 27,
+        "expected_pdf_page": 27,
+        "actual_pdf_page": 27,
+        "status": "命中"
+      },
+      {
+        "section_label": "第五节",
+        "title": "环境与社会责任",
+        "printed_page": 48,
+        "expected_pdf_page": 48,
+        "actual_pdf_page": 48,
+        "status": "命中"
+      },
+      {
+        "section_label": "第六节",
+        "title": "重要事项",
+        "printed_page": 51,
+        "expected_pdf_page": 51,
+        "actual_pdf_page": 52,
+        "status": "命中"
+      },
+      {
+        "section_label": "第七节",
+        "title": "股份变动及股东情况",
+        "printed_page": 63,
+        "expected_pdf_page": 63,
+        "actual_pdf_page": 63,
+        "status": "命中"
+      },
+      {
+        "section_label": "第八节",
+        "title": "优先股相关情况",
+        "printed_page": 68,
+        "expected_pdf_page": 68,
+        "actual_pdf_page": 68,
+        "status": "命中"
+      },
+      {
+        "section_label": "第九节",
+        "title": "债券相关情况",
+        "printed_page": 69,
+        "expected_pdf_page": 69,
+        "actual_pdf_page": 69,
+        "status": "命中"
+      },
+      {
+        "section_label": "第十节",
+        "title": "财务报告",
+        "printed_page": 84,
+        "expected_pdf_page": 84,
+        "actual_pdf_page": 84,
+        "status": "命中"
+      },
+      {
+        "section_label": "",
+        "title": "备查文件目录",
+        "printed_page": null,
+        "expected_pdf_page": null,
+        "actual_pdf_page": null,
+        "status": "未校验"
+      }
+    ]
+  },
+  "workbook_directory": {
+    "年份": 2022,
+    "年报标题": "长江电力2022年年度报告",
+    "PDF文件": "2023-04-28_长江电力2022年年度报告_1216664110.pdf",
+    "页数": 236,
+    "主表页命中": "合并利润表:92,93,94, 合并现金流量表:95,96,97, 合并资产负债表:88,89,90, 母公司利润表:94,95, 母公司现金流量表:97,98,99,100, 母公司资产负债表:90,91,92",
+    "主表行数": 261,
+    "附注起始页": 137,
+    "附注行数": 1441,
+    "状态": "成功"
+  },
+  "excel_comparison": {
+    "overall": {
+      "一致": 127,
+      "差异": 0,
+      "未命中": 6
+    },
+    "by_statement": {
+      "利润表": {
+        "compared_rows": 33,
+        "一致": 31,
+        "差异": 0,
+        "未命中": 2
+      },
+      "资产负债表": {
+        "compared_rows": 65,
+        "一致": 62,
+        "差异": 0,
+        "未命中": 3
+      },
+      "现金流量表": {
+        "compared_rows": 35,
+        "一致": 34,
+        "差异": 0,
+        "未命中": 1
+      }
+    },
+    "examples": [
+      {
+        "year": 2022,
+        "statement": "利润表",
+        "item": "每股收益-基本",
+        "status": "未命中",
+        "xls_current": 0.97,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2022,
+        "statement": "利润表",
+        "item": "每股收益-稀释",
+        "status": "未命中",
+        "xls_current": 0.97,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2022,
+        "statement": "资产负债表",
+        "item": "其他应付款(合计):应付利息",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2022,
+        "statement": "资产负债表",
+        "item": "长期应付款(合计)",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2022,
+        "statement": "资产负债表",
+        "item": "长期应付款(合计):长期应付款",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      },
+      {
+        "year": 2022,
+        "statement": "现金流量表",
+        "item": "收到其他与筹资活动有关的现金",
+        "status": "未命中",
+        "xls_current": null,
+        "pdf_item": "",
+        "pdf_current": null
+      }
+    ]
+  },
+  "datayes_summary": [
+    {
+      "年份": 2022,
+      "校验状态": "与后续年报重述值一致",
+      "条目数": 75
+    },
+    {
+      "年份": 2022,
+      "校验状态": "与当年PDF一致",
+      "条目数": 39
+    },
+    {
+      "年份": 2022,
+      "校验状态": "与Datayes存在差异，保留PDF原值",
+      "条目数": 11
+    },
+    {
+      "年份": 2022,
+      "校验状态": "PDF未定位到，已用Datayes补充",
+      "条目数": 3
+    }
+  ]
+}

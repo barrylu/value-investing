@@ -1,0 +1,1644 @@
+{
+  "company": {
+    "name": "中国海油",
+    "code": "600938"
+  },
+  "year": 2023,
+  "title": "中国海洋石油有限公司2023年年度报告",
+  "disclosure_date": "2024-03-22",
+  "source_pdf": {
+    "file": "2024-03-22_中国海洋石油有限公司2023年年度报告_1219375212.pdf",
+    "sha256": "d1d6dba5b52882d7c6d9d46913edb14378c8a32bc4e8e4de794337baa185e8f5",
+    "url": "http://static.cninfo.com.cn/finalpage/2024-03-22/1219375212.PDF"
+  },
+  "fulltext_markdown": "2023-中国海洋石油有限公司2023年年度报告.md",
+  "page_count": 270,
+  "low_text_threshold": 80,
+  "low_text_pages": [
+    1
+  ],
+  "used_plain_fallback_pages": [],
+  "page_stats": [
+    {
+      "pdf_page": 1,
+      "page_label": "",
+      "char_count": 48,
+      "line_count": 5
+    },
+    {
+      "pdf_page": 2,
+      "page_label": "",
+      "char_count": 1163,
+      "line_count": 34
+    },
+    {
+      "pdf_page": 3,
+      "page_label": "",
+      "char_count": 564,
+      "line_count": 19
+    },
+    {
+      "pdf_page": 4,
+      "page_label": "",
+      "char_count": 287,
+      "line_count": 42
+    },
+    {
+      "pdf_page": 5,
+      "page_label": "",
+      "char_count": 430,
+      "line_count": 31
+    },
+    {
+      "pdf_page": 6,
+      "page_label": "",
+      "char_count": 140,
+      "line_count": 22
+    },
+    {
+      "pdf_page": 7,
+      "page_label": "",
+      "char_count": 642,
+      "line_count": 33
+    },
+    {
+      "pdf_page": 8,
+      "page_label": "",
+      "char_count": 330,
+      "line_count": 26
+    },
+    {
+      "pdf_page": 9,
+      "page_label": "",
+      "char_count": 375,
+      "line_count": 33
+    },
+    {
+      "pdf_page": 10,
+      "page_label": "",
+      "char_count": 388,
+      "line_count": 54
+    },
+    {
+      "pdf_page": 11,
+      "page_label": "",
+      "char_count": 596,
+      "line_count": 74
+    },
+    {
+      "pdf_page": 12,
+      "page_label": "",
+      "char_count": 1162,
+      "line_count": 191
+    },
+    {
+      "pdf_page": 13,
+      "page_label": "",
+      "char_count": 1416,
+      "line_count": 208
+    },
+    {
+      "pdf_page": 14,
+      "page_label": "",
+      "char_count": 1307,
+      "line_count": 213
+    },
+    {
+      "pdf_page": 15,
+      "page_label": "",
+      "char_count": 454,
+      "line_count": 54
+    },
+    {
+      "pdf_page": 16,
+      "page_label": "",
+      "char_count": 1009,
+      "line_count": 31
+    },
+    {
+      "pdf_page": 17,
+      "page_label": "",
+      "char_count": 226,
+      "line_count": 10
+    },
+    {
+      "pdf_page": 18,
+      "page_label": "",
+      "char_count": 1104,
+      "line_count": 33
+    },
+    {
+      "pdf_page": 19,
+      "page_label": "",
+      "char_count": 772,
+      "line_count": 23
+    },
+    {
+      "pdf_page": 20,
+      "page_label": "",
+      "char_count": 825,
+      "line_count": 52
+    },
+    {
+      "pdf_page": 21,
+      "page_label": "",
+      "char_count": 964,
+      "line_count": 134
+    },
+    {
+      "pdf_page": 22,
+      "page_label": "",
+      "char_count": 738,
+      "line_count": 21
+    },
+    {
+      "pdf_page": 23,
+      "page_label": "",
+      "char_count": 949,
+      "line_count": 30
+    },
+    {
+      "pdf_page": 24,
+      "page_label": "",
+      "char_count": 998,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 25,
+      "page_label": "",
+      "char_count": 735,
+      "line_count": 29
+    },
+    {
+      "pdf_page": 26,
+      "page_label": "",
+      "char_count": 748,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 27,
+      "page_label": "2/3",
+      "char_count": 807,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 28,
+      "page_label": "",
+      "char_count": 832,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 29,
+      "page_label": "",
+      "char_count": 925,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 30,
+      "page_label": "",
+      "char_count": 889,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 31,
+      "page_label": "",
+      "char_count": 887,
+      "line_count": 29
+    },
+    {
+      "pdf_page": 32,
+      "page_label": "",
+      "char_count": 1087,
+      "line_count": 33
+    },
+    {
+      "pdf_page": 33,
+      "page_label": "",
+      "char_count": 740,
+      "line_count": 22
+    },
+    {
+      "pdf_page": 34,
+      "page_label": "",
+      "char_count": 781,
+      "line_count": 46
+    },
+    {
+      "pdf_page": 35,
+      "page_label": "12/356",
+      "char_count": 1072,
+      "line_count": 32
+    },
+    {
+      "pdf_page": 36,
+      "page_label": "",
+      "char_count": 965,
+      "line_count": 31
+    },
+    {
+      "pdf_page": 37,
+      "page_label": "",
+      "char_count": 972,
+      "line_count": 32
+    },
+    {
+      "pdf_page": 38,
+      "page_label": "",
+      "char_count": 1200,
+      "line_count": 38
+    },
+    {
+      "pdf_page": 39,
+      "page_label": "",
+      "char_count": 810,
+      "line_count": 30
+    },
+    {
+      "pdf_page": 40,
+      "page_label": "",
+      "char_count": 977,
+      "line_count": 32
+    },
+    {
+      "pdf_page": 41,
+      "page_label": "",
+      "char_count": 898,
+      "line_count": 30
+    },
+    {
+      "pdf_page": 42,
+      "page_label": "",
+      "char_count": 929,
+      "line_count": 32
+    },
+    {
+      "pdf_page": 43,
+      "page_label": "",
+      "char_count": 883,
+      "line_count": 30
+    },
+    {
+      "pdf_page": 44,
+      "page_label": "",
+      "char_count": 687,
+      "line_count": 26
+    },
+    {
+      "pdf_page": 45,
+      "page_label": "",
+      "char_count": 726,
+      "line_count": 25
+    },
+    {
+      "pdf_page": 46,
+      "page_label": "",
+      "char_count": 445,
+      "line_count": 16
+    },
+    {
+      "pdf_page": 47,
+      "page_label": "",
+      "char_count": 1065,
+      "line_count": 31
+    },
+    {
+      "pdf_page": 48,
+      "page_label": "",
+      "char_count": 629,
+      "line_count": 29
+    },
+    {
+      "pdf_page": 49,
+      "page_label": "",
+      "char_count": 479,
+      "line_count": 26
+    },
+    {
+      "pdf_page": 50,
+      "page_label": "",
+      "char_count": 633,
+      "line_count": 29
+    },
+    {
+      "pdf_page": 51,
+      "page_label": "第84页",
+      "char_count": 879,
+      "line_count": 41
+    },
+    {
+      "pdf_page": 52,
+      "page_label": "",
+      "char_count": 826,
+      "line_count": 38
+    },
+    {
+      "pdf_page": 53,
+      "page_label": "",
+      "char_count": 412,
+      "line_count": 17
+    },
+    {
+      "pdf_page": 54,
+      "page_label": "第267页",
+      "char_count": 629,
+      "line_count": 27
+    },
+    {
+      "pdf_page": 55,
+      "page_label": "",
+      "char_count": 872,
+      "line_count": 37
+    },
+    {
+      "pdf_page": 56,
+      "page_label": "",
+      "char_count": 398,
+      "line_count": 25
+    },
+    {
+      "pdf_page": 57,
+      "page_label": "",
+      "char_count": 678,
+      "line_count": 49
+    },
+    {
+      "pdf_page": 58,
+      "page_label": "",
+      "char_count": 570,
+      "line_count": 50
+    },
+    {
+      "pdf_page": 59,
+      "page_label": "第81页",
+      "char_count": 636,
+      "line_count": 30
+    },
+    {
+      "pdf_page": 60,
+      "page_label": "",
+      "char_count": 602,
+      "line_count": 31
+    },
+    {
+      "pdf_page": 61,
+      "page_label": "",
+      "char_count": 716,
+      "line_count": 31
+    },
+    {
+      "pdf_page": 62,
+      "page_label": "",
+      "char_count": 800,
+      "line_count": 37
+    },
+    {
+      "pdf_page": 63,
+      "page_label": "",
+      "char_count": 555,
+      "line_count": 48
+    },
+    {
+      "pdf_page": 64,
+      "page_label": "",
+      "char_count": 532,
+      "line_count": 98
+    },
+    {
+      "pdf_page": 65,
+      "page_label": "第81页",
+      "char_count": 632,
+      "line_count": 34
+    },
+    {
+      "pdf_page": 66,
+      "page_label": "第92页",
+      "char_count": 771,
+      "line_count": 35
+    },
+    {
+      "pdf_page": 67,
+      "page_label": "",
+      "char_count": 878,
+      "line_count": 39
+    },
+    {
+      "pdf_page": 68,
+      "page_label": "",
+      "char_count": 1042,
+      "line_count": 37
+    },
+    {
+      "pdf_page": 69,
+      "page_label": "",
+      "char_count": 933,
+      "line_count": 41
+    },
+    {
+      "pdf_page": 70,
+      "page_label": "",
+      "char_count": 683,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 71,
+      "page_label": "",
+      "char_count": 932,
+      "line_count": 40
+    },
+    {
+      "pdf_page": 72,
+      "page_label": "",
+      "char_count": 530,
+      "line_count": 23
+    },
+    {
+      "pdf_page": 73,
+      "page_label": "",
+      "char_count": 681,
+      "line_count": 31
+    },
+    {
+      "pdf_page": 74,
+      "page_label": "",
+      "char_count": 557,
+      "line_count": 46
+    },
+    {
+      "pdf_page": 75,
+      "page_label": "",
+      "char_count": 705,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 76,
+      "page_label": "",
+      "char_count": 599,
+      "line_count": 29
+    },
+    {
+      "pdf_page": 77,
+      "page_label": "",
+      "char_count": 508,
+      "line_count": 41
+    },
+    {
+      "pdf_page": 78,
+      "page_label": "",
+      "char_count": 817,
+      "line_count": 38
+    },
+    {
+      "pdf_page": 79,
+      "page_label": "",
+      "char_count": 763,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 80,
+      "page_label": "",
+      "char_count": 851,
+      "line_count": 43
+    },
+    {
+      "pdf_page": 81,
+      "page_label": "",
+      "char_count": 807,
+      "line_count": 26
+    },
+    {
+      "pdf_page": 82,
+      "page_label": "",
+      "char_count": 853,
+      "line_count": 29
+    },
+    {
+      "pdf_page": 83,
+      "page_label": "",
+      "char_count": 837,
+      "line_count": 26
+    },
+    {
+      "pdf_page": 84,
+      "page_label": "",
+      "char_count": 816,
+      "line_count": 24
+    },
+    {
+      "pdf_page": 85,
+      "page_label": "",
+      "char_count": 1200,
+      "line_count": 34
+    },
+    {
+      "pdf_page": 86,
+      "page_label": "",
+      "char_count": 1222,
+      "line_count": 35
+    },
+    {
+      "pdf_page": 87,
+      "page_label": "",
+      "char_count": 1270,
+      "line_count": 37
+    },
+    {
+      "pdf_page": 88,
+      "page_label": "",
+      "char_count": 697,
+      "line_count": 20
+    },
+    {
+      "pdf_page": 89,
+      "page_label": "",
+      "char_count": 1103,
+      "line_count": 29
+    },
+    {
+      "pdf_page": 90,
+      "page_label": "",
+      "char_count": 1068,
+      "line_count": 31
+    },
+    {
+      "pdf_page": 91,
+      "page_label": "",
+      "char_count": 917,
+      "line_count": 27
+    },
+    {
+      "pdf_page": 92,
+      "page_label": "",
+      "char_count": 1170,
+      "line_count": 35
+    },
+    {
+      "pdf_page": 93,
+      "page_label": "",
+      "char_count": 1090,
+      "line_count": 35
+    },
+    {
+      "pdf_page": 94,
+      "page_label": "2017/2018",
+      "char_count": 670,
+      "line_count": 18
+    },
+    {
+      "pdf_page": 95,
+      "page_label": "第10页",
+      "char_count": 760,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 96,
+      "page_label": "第33页",
+      "char_count": 996,
+      "line_count": 31
+    },
+    {
+      "pdf_page": 97,
+      "page_label": "",
+      "char_count": 755,
+      "line_count": 26
+    },
+    {
+      "pdf_page": 98,
+      "page_label": "第157页",
+      "char_count": 836,
+      "line_count": 25
+    },
+    {
+      "pdf_page": 99,
+      "page_label": "",
+      "char_count": 903,
+      "line_count": 34
+    },
+    {
+      "pdf_page": 100,
+      "page_label": "",
+      "char_count": 915,
+      "line_count": 45
+    },
+    {
+      "pdf_page": 101,
+      "page_label": "",
+      "char_count": 868,
+      "line_count": 36
+    },
+    {
+      "pdf_page": 102,
+      "page_label": "",
+      "char_count": 759,
+      "line_count": 42
+    },
+    {
+      "pdf_page": 103,
+      "page_label": "",
+      "char_count": 595,
+      "line_count": 26
+    },
+    {
+      "pdf_page": 104,
+      "page_label": "",
+      "char_count": 575,
+      "line_count": 47
+    },
+    {
+      "pdf_page": 105,
+      "page_label": "",
+      "char_count": 693,
+      "line_count": 64
+    },
+    {
+      "pdf_page": 106,
+      "page_label": "",
+      "char_count": 325,
+      "line_count": 26
+    },
+    {
+      "pdf_page": 107,
+      "page_label": "",
+      "char_count": 964,
+      "line_count": 22
+    },
+    {
+      "pdf_page": 108,
+      "page_label": "",
+      "char_count": 808,
+      "line_count": 53
+    },
+    {
+      "pdf_page": 109,
+      "page_label": "",
+      "char_count": 964,
+      "line_count": 59
+    },
+    {
+      "pdf_page": 110,
+      "page_label": "",
+      "char_count": 555,
+      "line_count": 21
+    },
+    {
+      "pdf_page": 111,
+      "page_label": "",
+      "char_count": 562,
+      "line_count": 23
+    },
+    {
+      "pdf_page": 112,
+      "page_label": "",
+      "char_count": 751,
+      "line_count": 26
+    },
+    {
+      "pdf_page": 113,
+      "page_label": "",
+      "char_count": 809,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 114,
+      "page_label": "",
+      "char_count": 666,
+      "line_count": 25
+    },
+    {
+      "pdf_page": 115,
+      "page_label": "",
+      "char_count": 890,
+      "line_count": 64
+    },
+    {
+      "pdf_page": 116,
+      "page_label": "",
+      "char_count": 939,
+      "line_count": 29
+    },
+    {
+      "pdf_page": 117,
+      "page_label": "",
+      "char_count": 803,
+      "line_count": 59
+    },
+    {
+      "pdf_page": 118,
+      "page_label": "",
+      "char_count": 795,
+      "line_count": 44
+    },
+    {
+      "pdf_page": 119,
+      "page_label": "",
+      "char_count": 315,
+      "line_count": 40
+    },
+    {
+      "pdf_page": 120,
+      "page_label": "",
+      "char_count": 710,
+      "line_count": 26
+    },
+    {
+      "pdf_page": 121,
+      "page_label": "",
+      "char_count": 836,
+      "line_count": 133
+    },
+    {
+      "pdf_page": 122,
+      "page_label": "",
+      "char_count": 535,
+      "line_count": 20
+    },
+    {
+      "pdf_page": 123,
+      "page_label": "",
+      "char_count": 772,
+      "line_count": 164
+    },
+    {
+      "pdf_page": 124,
+      "page_label": "",
+      "char_count": 717,
+      "line_count": 161
+    },
+    {
+      "pdf_page": 125,
+      "page_label": "",
+      "char_count": 250,
+      "line_count": 33
+    },
+    {
+      "pdf_page": 126,
+      "page_label": "",
+      "char_count": 582,
+      "line_count": 19
+    },
+    {
+      "pdf_page": 127,
+      "page_label": "",
+      "char_count": 276,
+      "line_count": 37
+    },
+    {
+      "pdf_page": 128,
+      "page_label": "",
+      "char_count": 441,
+      "line_count": 20
+    },
+    {
+      "pdf_page": 129,
+      "page_label": "",
+      "char_count": 318,
+      "line_count": 39
+    },
+    {
+      "pdf_page": 130,
+      "page_label": "",
+      "char_count": 584,
+      "line_count": 48
+    },
+    {
+      "pdf_page": 131,
+      "page_label": "",
+      "char_count": 499,
+      "line_count": 62
+    },
+    {
+      "pdf_page": 132,
+      "page_label": "",
+      "char_count": 658,
+      "line_count": 57
+    },
+    {
+      "pdf_page": 133,
+      "page_label": "",
+      "char_count": 531,
+      "line_count": 71
+    },
+    {
+      "pdf_page": 134,
+      "page_label": "",
+      "char_count": 1765,
+      "line_count": 224
+    },
+    {
+      "pdf_page": 135,
+      "page_label": "",
+      "char_count": 788,
+      "line_count": 79
+    },
+    {
+      "pdf_page": 136,
+      "page_label": "",
+      "char_count": 535,
+      "line_count": 47
+    },
+    {
+      "pdf_page": 137,
+      "page_label": "",
+      "char_count": 920,
+      "line_count": 115
+    },
+    {
+      "pdf_page": 138,
+      "page_label": "",
+      "char_count": 990,
+      "line_count": 76
+    },
+    {
+      "pdf_page": 139,
+      "page_label": "",
+      "char_count": 375,
+      "line_count": 49
+    },
+    {
+      "pdf_page": 140,
+      "page_label": "",
+      "char_count": 613,
+      "line_count": 64
+    },
+    {
+      "pdf_page": 141,
+      "page_label": "",
+      "char_count": 184,
+      "line_count": 21
+    },
+    {
+      "pdf_page": 142,
+      "page_label": "",
+      "char_count": 587,
+      "line_count": 37
+    },
+    {
+      "pdf_page": 143,
+      "page_label": "",
+      "char_count": 202,
+      "line_count": 17
+    },
+    {
+      "pdf_page": 144,
+      "page_label": "",
+      "char_count": 714,
+      "line_count": 27
+    },
+    {
+      "pdf_page": 145,
+      "page_label": "",
+      "char_count": 902,
+      "line_count": 49
+    },
+    {
+      "pdf_page": 146,
+      "page_label": "",
+      "char_count": 893,
+      "line_count": 31
+    },
+    {
+      "pdf_page": 147,
+      "page_label": "",
+      "char_count": 503,
+      "line_count": 23
+    },
+    {
+      "pdf_page": 148,
+      "page_label": "",
+      "char_count": 731,
+      "line_count": 111
+    },
+    {
+      "pdf_page": 149,
+      "page_label": "",
+      "char_count": 770,
+      "line_count": 116
+    },
+    {
+      "pdf_page": 150,
+      "page_label": "",
+      "char_count": 620,
+      "line_count": 96
+    },
+    {
+      "pdf_page": 151,
+      "page_label": "",
+      "char_count": 702,
+      "line_count": 103
+    },
+    {
+      "pdf_page": 152,
+      "page_label": "",
+      "char_count": 543,
+      "line_count": 70
+    },
+    {
+      "pdf_page": 153,
+      "page_label": "",
+      "char_count": 521,
+      "line_count": 82
+    },
+    {
+      "pdf_page": 154,
+      "page_label": "",
+      "char_count": 634,
+      "line_count": 72
+    },
+    {
+      "pdf_page": 155,
+      "page_label": "",
+      "char_count": 465,
+      "line_count": 56
+    },
+    {
+      "pdf_page": 156,
+      "page_label": "",
+      "char_count": 704,
+      "line_count": 87
+    },
+    {
+      "pdf_page": 157,
+      "page_label": "",
+      "char_count": 702,
+      "line_count": 151
+    },
+    {
+      "pdf_page": 158,
+      "page_label": "",
+      "char_count": 815,
+      "line_count": 179
+    },
+    {
+      "pdf_page": 159,
+      "page_label": "",
+      "char_count": 756,
+      "line_count": 146
+    },
+    {
+      "pdf_page": 160,
+      "page_label": "",
+      "char_count": 611,
+      "line_count": 27
+    },
+    {
+      "pdf_page": 161,
+      "page_label": "",
+      "char_count": 902,
+      "line_count": 40
+    },
+    {
+      "pdf_page": 162,
+      "page_label": "",
+      "char_count": 696,
+      "line_count": 31
+    },
+    {
+      "pdf_page": 163,
+      "page_label": "",
+      "char_count": 999,
+      "line_count": 38
+    },
+    {
+      "pdf_page": 164,
+      "page_label": "",
+      "char_count": 919,
+      "line_count": 34
+    },
+    {
+      "pdf_page": 165,
+      "page_label": "",
+      "char_count": 693,
+      "line_count": 27
+    },
+    {
+      "pdf_page": 166,
+      "page_label": "",
+      "char_count": 713,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 167,
+      "page_label": "",
+      "char_count": 773,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 168,
+      "page_label": "",
+      "char_count": 962,
+      "line_count": 35
+    },
+    {
+      "pdf_page": 169,
+      "page_label": "",
+      "char_count": 916,
+      "line_count": 34
+    },
+    {
+      "pdf_page": 170,
+      "page_label": "",
+      "char_count": 747,
+      "line_count": 33
+    },
+    {
+      "pdf_page": 171,
+      "page_label": "",
+      "char_count": 1137,
+      "line_count": 37
+    },
+    {
+      "pdf_page": 172,
+      "page_label": "",
+      "char_count": 785,
+      "line_count": 33
+    },
+    {
+      "pdf_page": 173,
+      "page_label": "",
+      "char_count": 966,
+      "line_count": 35
+    },
+    {
+      "pdf_page": 174,
+      "page_label": "",
+      "char_count": 887,
+      "line_count": 38
+    },
+    {
+      "pdf_page": 175,
+      "page_label": "",
+      "char_count": 618,
+      "line_count": 32
+    },
+    {
+      "pdf_page": 176,
+      "page_label": "",
+      "char_count": 600,
+      "line_count": 29
+    },
+    {
+      "pdf_page": 177,
+      "page_label": "",
+      "char_count": 765,
+      "line_count": 34
+    },
+    {
+      "pdf_page": 178,
+      "page_label": "",
+      "char_count": 605,
+      "line_count": 25
+    },
+    {
+      "pdf_page": 179,
+      "page_label": "",
+      "char_count": 721,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 180,
+      "page_label": "",
+      "char_count": 872,
+      "line_count": 32
+    },
+    {
+      "pdf_page": 181,
+      "page_label": "",
+      "char_count": 945,
+      "line_count": 34
+    },
+    {
+      "pdf_page": 182,
+      "page_label": "",
+      "char_count": 721,
+      "line_count": 31
+    },
+    {
+      "pdf_page": 183,
+      "page_label": "",
+      "char_count": 933,
+      "line_count": 33
+    },
+    {
+      "pdf_page": 184,
+      "page_label": "",
+      "char_count": 805,
+      "line_count": 35
+    },
+    {
+      "pdf_page": 185,
+      "page_label": "",
+      "char_count": 733,
+      "line_count": 36
+    },
+    {
+      "pdf_page": 186,
+      "page_label": "",
+      "char_count": 684,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 187,
+      "page_label": "",
+      "char_count": 846,
+      "line_count": 31
+    },
+    {
+      "pdf_page": 188,
+      "page_label": "",
+      "char_count": 1028,
+      "line_count": 37
+    },
+    {
+      "pdf_page": 189,
+      "page_label": "",
+      "char_count": 669,
+      "line_count": 52
+    },
+    {
+      "pdf_page": 190,
+      "page_label": "",
+      "char_count": 809,
+      "line_count": 33
+    },
+    {
+      "pdf_page": 191,
+      "page_label": "",
+      "char_count": 500,
+      "line_count": 56
+    },
+    {
+      "pdf_page": 192,
+      "page_label": "",
+      "char_count": 563,
+      "line_count": 53
+    },
+    {
+      "pdf_page": 193,
+      "page_label": "",
+      "char_count": 292,
+      "line_count": 58
+    },
+    {
+      "pdf_page": 194,
+      "page_label": "",
+      "char_count": 802,
+      "line_count": 82
+    },
+    {
+      "pdf_page": 195,
+      "page_label": "",
+      "char_count": 444,
+      "line_count": 86
+    },
+    {
+      "pdf_page": 196,
+      "page_label": "",
+      "char_count": 641,
+      "line_count": 89
+    },
+    {
+      "pdf_page": 197,
+      "page_label": "",
+      "char_count": 610,
+      "line_count": 78
+    },
+    {
+      "pdf_page": 198,
+      "page_label": "",
+      "char_count": 546,
+      "line_count": 79
+    },
+    {
+      "pdf_page": 199,
+      "page_label": "",
+      "char_count": 334,
+      "line_count": 44
+    },
+    {
+      "pdf_page": 200,
+      "page_label": "",
+      "char_count": 478,
+      "line_count": 57
+    },
+    {
+      "pdf_page": 201,
+      "page_label": "",
+      "char_count": 823,
+      "line_count": 118
+    },
+    {
+      "pdf_page": 202,
+      "page_label": "",
+      "char_count": 281,
+      "line_count": 22
+    },
+    {
+      "pdf_page": 203,
+      "page_label": "",
+      "char_count": 619,
+      "line_count": 107
+    },
+    {
+      "pdf_page": 204,
+      "page_label": "",
+      "char_count": 391,
+      "line_count": 59
+    },
+    {
+      "pdf_page": 205,
+      "page_label": "",
+      "char_count": 661,
+      "line_count": 20
+    },
+    {
+      "pdf_page": 206,
+      "page_label": "",
+      "char_count": 840,
+      "line_count": 168
+    },
+    {
+      "pdf_page": 207,
+      "page_label": "",
+      "char_count": 515,
+      "line_count": 18
+    },
+    {
+      "pdf_page": 208,
+      "page_label": "",
+      "char_count": 889,
+      "line_count": 193
+    },
+    {
+      "pdf_page": 209,
+      "page_label": "",
+      "char_count": 675,
+      "line_count": 63
+    },
+    {
+      "pdf_page": 210,
+      "page_label": "",
+      "char_count": 967,
+      "line_count": 57
+    },
+    {
+      "pdf_page": 211,
+      "page_label": "",
+      "char_count": 749,
+      "line_count": 49
+    },
+    {
+      "pdf_page": 212,
+      "page_label": "",
+      "char_count": 554,
+      "line_count": 39
+    },
+    {
+      "pdf_page": 213,
+      "page_label": "",
+      "char_count": 280,
+      "line_count": 30
+    },
+    {
+      "pdf_page": 214,
+      "page_label": "",
+      "char_count": 595,
+      "line_count": 48
+    },
+    {
+      "pdf_page": 215,
+      "page_label": "",
+      "char_count": 380,
+      "line_count": 48
+    },
+    {
+      "pdf_page": 216,
+      "page_label": "",
+      "char_count": 1557,
+      "line_count": 225
+    },
+    {
+      "pdf_page": 217,
+      "page_label": "",
+      "char_count": 1673,
+      "line_count": 236
+    },
+    {
+      "pdf_page": 218,
+      "page_label": "",
+      "char_count": 343,
+      "line_count": 35
+    },
+    {
+      "pdf_page": 219,
+      "page_label": "",
+      "char_count": 537,
+      "line_count": 62
+    },
+    {
+      "pdf_page": 220,
+      "page_label": "",
+      "char_count": 614,
+      "line_count": 116
+    },
+    {
+      "pdf_page": 221,
+      "page_label": "",
+      "char_count": 638,
+      "line_count": 87
+    },
+    {
+      "pdf_page": 222,
+      "page_label": "",
+      "char_count": 414,
+      "line_count": 44
+    },
+    {
+      "pdf_page": 223,
+      "page_label": "",
+      "char_count": 861,
+      "line_count": 92
+    },
+    {
+      "pdf_page": 224,
+      "page_label": "",
+      "char_count": 563,
+      "line_count": 93
+    },
+    {
+      "pdf_page": 225,
+      "page_label": "",
+      "char_count": 366,
+      "line_count": 44
+    },
+    {
+      "pdf_page": 226,
+      "page_label": "",
+      "char_count": 543,
+      "line_count": 73
+    },
+    {
+      "pdf_page": 227,
+      "page_label": "",
+      "char_count": 425,
+      "line_count": 63
+    },
+    {
+      "pdf_page": 228,
+      "page_label": "",
+      "char_count": 511,
+      "line_count": 59
+    },
+    {
+      "pdf_page": 229,
+      "page_label": "",
+      "char_count": 636,
+      "line_count": 71
+    },
+    {
+      "pdf_page": 230,
+      "page_label": "",
+      "char_count": 450,
+      "line_count": 69
+    },
+    {
+      "pdf_page": 231,
+      "page_label": "",
+      "char_count": 613,
+      "line_count": 81
+    },
+    {
+      "pdf_page": 232,
+      "page_label": "",
+      "char_count": 335,
+      "line_count": 45
+    },
+    {
+      "pdf_page": 233,
+      "page_label": "",
+      "char_count": 433,
+      "line_count": 81
+    },
+    {
+      "pdf_page": 234,
+      "page_label": "",
+      "char_count": 258,
+      "line_count": 17
+    },
+    {
+      "pdf_page": 235,
+      "page_label": "",
+      "char_count": 1076,
+      "line_count": 139
+    },
+    {
+      "pdf_page": 236,
+      "page_label": "",
+      "char_count": 482,
+      "line_count": 62
+    },
+    {
+      "pdf_page": 237,
+      "page_label": "",
+      "char_count": 797,
+      "line_count": 44
+    },
+    {
+      "pdf_page": 238,
+      "page_label": "",
+      "char_count": 1020,
+      "line_count": 38
+    },
+    {
+      "pdf_page": 239,
+      "page_label": "",
+      "char_count": 809,
+      "line_count": 46
+    },
+    {
+      "pdf_page": 240,
+      "page_label": "",
+      "char_count": 795,
+      "line_count": 123
+    },
+    {
+      "pdf_page": 241,
+      "page_label": "",
+      "char_count": 672,
+      "line_count": 39
+    },
+    {
+      "pdf_page": 242,
+      "page_label": "",
+      "char_count": 366,
+      "line_count": 61
+    },
+    {
+      "pdf_page": 243,
+      "page_label": "",
+      "char_count": 559,
+      "line_count": 66
+    },
+    {
+      "pdf_page": 244,
+      "page_label": "",
+      "char_count": 639,
+      "line_count": 33
+    },
+    {
+      "pdf_page": 245,
+      "page_label": "",
+      "char_count": 592,
+      "line_count": 21
+    },
+    {
+      "pdf_page": 246,
+      "page_label": "",
+      "char_count": 575,
+      "line_count": 43
+    },
+    {
+      "pdf_page": 247,
+      "page_label": "",
+      "char_count": 579,
+      "line_count": 51
+    },
+    {
+      "pdf_page": 248,
+      "page_label": "",
+      "char_count": 415,
+      "line_count": 39
+    },
+    {
+      "pdf_page": 249,
+      "page_label": "",
+      "char_count": 590,
+      "line_count": 44
+    },
+    {
+      "pdf_page": 250,
+      "page_label": "",
+      "char_count": 689,
+      "line_count": 28
+    },
+    {
+      "pdf_page": 251,
+      "page_label": "",
+      "char_count": 1086,
+      "line_count": 152
+    },
+    {
+      "pdf_page": 252,
+      "page_label": "",
+      "char_count": 910,
+      "line_count": 114
+    },
+    {
+      "pdf_page": 253,
+      "page_label": "",
+      "char_count": 796,
+      "line_count": 77
+    },
+    {
+      "pdf_page": 254,
+      "page_label": "",
+      "char_count": 415,
+      "line_count": 52
+    },
+    {
+      "pdf_page": 255,
+      "page_label": "",
+      "char_count": 786,
+      "line_count": 135
+    },
+    {
+      "pdf_page": 256,
+      "page_label": "",
+      "char_count": 424,
+      "line_count": 51
+    },
+    {
+      "pdf_page": 257,
+      "page_label": "",
+      "char_count": 591,
+      "line_count": 81
+    },
+    {
+      "pdf_page": 258,
+      "page_label": "",
+      "char_count": 204,
+      "line_count": 19
+    },
+    {
+      "pdf_page": 259,
+      "page_label": "",
+      "char_count": 630,
+      "line_count": 78
+    },
+    {
+      "pdf_page": 260,
+      "page_label": "",
+      "char_count": 256,
+      "line_count": 25
+    },
+    {
+      "pdf_page": 261,
+      "page_label": "",
+      "char_count": 623,
+      "line_count": 26
+    },
+    {
+      "pdf_page": 262,
+      "page_label": "",
+      "char_count": 485,
+      "line_count": 16
+    },
+    {
+      "pdf_page": 263,
+      "page_label": "",
+      "char_count": 1032,
+      "line_count": 222
+    },
+    {
+      "pdf_page": 264,
+      "page_label": "",
+      "char_count": 725,
+      "line_count": 150
+    },
+    {
+      "pdf_page": 265,
+      "page_label": "",
+      "char_count": 1148,
+      "line_count": 86
+    },
+    {
+      "pdf_page": 266,
+      "page_label": "",
+      "char_count": 415,
+      "line_count": 43
+    },
+    {
+      "pdf_page": 267,
+      "page_label": "",
+      "char_count": 145,
+      "line_count": 24
+    },
+    {
+      "pdf_page": 268,
+      "page_label": "",
+      "char_count": 188,
+      "line_count": 23
+    },
+    {
+      "pdf_page": 269,
+      "page_label": "",
+      "char_count": 408,
+      "line_count": 29
+    },
+    {
+      "pdf_page": 270,
+      "page_label": "",
+      "char_count": 273,
+      "line_count": 12
+    }
+  ],
+  "headings": []
+}

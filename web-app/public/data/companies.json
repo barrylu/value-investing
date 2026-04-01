@@ -1,0 +1,30 @@
+[
+  {
+    "slug": "长江电力-600900",
+    "name": "长江电力",
+    "ticker": "600900",
+    "industry": "电力",
+    "latestPeriod": "2024年报",
+    "latestRevenue": 844.9187056652,
+    "latestProfit": 329.3019939519,
+    "latestROE": 15.4531,
+    "latestDividendYield": 3.1912,
+    "hasValuation": true,
+    "hasNotes": true,
+    "annualCount": 23
+  },
+  {
+    "slug": "中国海油-600938",
+    "name": "中国海油",
+    "ticker": "600938",
+    "industry": "油气开采Ⅱ",
+    "latestPeriod": "2024年报",
+    "latestRevenue": 4205.06,
+    "latestProfit": 1379.82,
+    "latestROE": 18.4518,
+    "latestDividendYield": 4.3429,
+    "hasValuation": true,
+    "hasNotes": false,
+    "annualCount": 7
+  }
+]
