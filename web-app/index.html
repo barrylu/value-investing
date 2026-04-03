@@ -38,20 +38,20 @@
     .tab-btn { @apply px-3 py-1.5 text-sm rounded-md cursor-pointer transition-all whitespace-nowrap shrink-0; }
     .tab-btn:hover { @apply bg-gray-100; }
     .tab-btn.active { @apply bg-blue-600 text-white; }
-    .markdown-body h1 { @apply text-2xl font-bold mt-6 mb-3; }
-    .markdown-body h2 { @apply text-xl font-bold mt-5 mb-2; }
-    .markdown-body h3 { @apply text-lg font-semibold mt-4 mb-2; }
-    .markdown-body p { @apply mb-3 leading-relaxed; }
-    .markdown-body ul { @apply list-disc pl-6 mb-3; }
-    .markdown-body ol { @apply list-decimal pl-6 mb-3; }
-    .markdown-body li { @apply mb-1; }
-    .markdown-body blockquote { @apply border-l-4 border-blue-300 pl-4 italic text-gray-600 my-3; }
-    .markdown-body code { @apply bg-gray-100 px-1.5 py-0.5 rounded text-sm font-mono; }
-    .markdown-body pre { @apply bg-gray-900 text-gray-100 p-4 rounded-lg overflow-x-auto my-3; }
-    .markdown-body table { @apply w-full border-collapse my-3; }
-    .markdown-body th { @apply bg-gray-50 border border-gray-200 px-3 py-2 text-left text-sm font-semibold; }
-    .markdown-body td { @apply border border-gray-200 px-3 py-2 text-sm; }
-    .markdown-body a { @apply text-blue-600 hover:underline; }
+    .markdown-body h1 { @apply text-xl md:text-2xl font-bold mt-6 mb-3; }
+    .markdown-body h2 { @apply text-lg md:text-xl font-bold mt-5 mb-2; }
+    .markdown-body h3 { @apply text-base md:text-lg font-semibold mt-4 mb-2; }
+    .markdown-body p { @apply mb-3 leading-relaxed text-sm md:text-base; }
+    .markdown-body ul { @apply list-disc pl-5 md:pl-6 mb-3 text-sm md:text-base; }
+    .markdown-body ol { @apply list-decimal pl-5 md:pl-6 mb-3 text-sm md:text-base; }
+    .markdown-body li { @apply mb-1.5 leading-relaxed; }
+    .markdown-body blockquote { @apply border-l-4 border-blue-300 pl-3 md:pl-4 italic text-gray-600 my-3 text-sm md:text-base; }
+    .markdown-body code { @apply bg-gray-100 px-1.5 py-0.5 rounded text-xs md:text-sm font-mono; }
+    .markdown-body pre { @apply bg-gray-900 text-gray-100 p-3 md:p-4 rounded-lg overflow-x-auto my-3 text-xs md:text-sm; }
+    .markdown-body table { @apply w-full border-collapse my-3 text-xs md:text-sm; display: block; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+    .markdown-body th { @apply bg-gray-50 border border-gray-200 px-2 md:px-3 py-1.5 md:py-2 text-left font-semibold whitespace-nowrap; }
+    .markdown-body td { @apply border border-gray-200 px-2 md:px-3 py-1.5 md:py-2; }
+    .markdown-body a { @apply text-blue-600 hover:underline break-all; }
     .markdown-body hr { @apply my-4 border-gray-200; }
     .chart-container { width: 100%; height: 380px; }
     @media (max-width: 767px) {
@@ -985,7 +985,7 @@ createApp({
 
     async function openNote(slug, note) {
       noteReadingTitle.value = note.title;
-      noteReading.value = note.preview + '\n\n---\n\n*完整笔记请在本地 Markdown 编辑器中打开*';
+      noteReading.value = note.content || note.preview || '暂无内容';
     }
 
     // Watchers

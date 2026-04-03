@@ -194,6 +194,7 @@ def build_notes_index(company_dir: Path) -> list[dict]:
             "title": title,
             "size": md_file.stat().st_size,
             "preview": content[:500],
+            "content": content,
         })
 
     return notes
