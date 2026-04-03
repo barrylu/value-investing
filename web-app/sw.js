@@ -1,7 +1,7 @@
 // Service Worker for 价值投资研究平台
-const CACHE_NAME = 'value-investing-v1';
-const STATIC_CACHE = 'static-v1';
-const DATA_CACHE = 'data-v1';
+const CACHE_NAME = 'value-investing-v2';
+const STATIC_CACHE = 'static-v2';
+const DATA_CACHE = 'data-v2';
 
 // Static resources to pre-cache
 const PRECACHE_URLS = [
@@ -60,7 +60,13 @@ self.addEventListener('fetch', (event) => {
     return;
   }
 
-  // Same-origin static resources: Cache First
+  // HTML pages: Network First (always get latest version)
+  if (url.origin === self.location.origin && (event.request.mode === 'navigate' || url.pathname.endsWith('.html') || url.pathname.endsWith('/'))) {
+    event.respondWith(networkFirst(event.request, STATIC_CACHE));
+    return;
+  }
+
+  // Same-origin static resources (JS, CSS, images): Cache First
   if (url.origin === self.location.origin) {
     event.respondWith(cacheFirst(event.request, STATIC_CACHE));
     return;
