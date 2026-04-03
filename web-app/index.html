@@ -20,15 +20,22 @@
       --primary: #1e40af;
       --up: #dc2626;    /* 涨 = 红 */
       --down: #16a34a;  /* 跌 = 绿 */
+      --safe-top: env(safe-area-inset-top, 0px);
+      --safe-bottom: env(safe-area-inset-bottom, 0px);
     }
     body { font-family: -apple-system, BlinkMacSystemFont, 'PingFang SC', 'Microsoft YaHei', sans-serif; }
-    .fade-enter-active, .fade-leave-active { transition: opacity 0.2s; }
+    .fade-enter-active, .fade-leave-active { transition: opacity 0.2s ease; }
     .fade-enter-from, .fade-leave-to { opacity: 0; }
-    .stat-card { @apply bg-white rounded-xl shadow-sm border border-gray-100 p-4; }
+    .page-transition { animation: pageFadeIn 0.25s ease-out; }
+    @keyframes pageFadeIn {
+      from { opacity: 0; transform: translateY(6px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    .stat-card { @apply bg-white rounded-xl shadow-sm border border-gray-100 p-3 md:p-4; }
     .nav-item { @apply px-4 py-2 rounded-lg cursor-pointer transition-all duration-200 text-sm font-medium; }
     .nav-item:hover { @apply bg-blue-50 text-blue-700; }
     .nav-item.active { @apply bg-blue-600 text-white shadow-md; }
-    .tab-btn { @apply px-3 py-1.5 text-sm rounded-md cursor-pointer transition-all; }
+    .tab-btn { @apply px-3 py-1.5 text-sm rounded-md cursor-pointer transition-all whitespace-nowrap shrink-0; }
     .tab-btn:hover { @apply bg-gray-100; }
     .tab-btn.active { @apply bg-blue-600 text-white; }
     .markdown-body h1 { @apply text-2xl font-bold mt-6 mb-3; }
@@ -47,16 +54,101 @@
     .markdown-body a { @apply text-blue-600 hover:underline; }
     .markdown-body hr { @apply my-4 border-gray-200; }
     .chart-container { width: 100%; height: 380px; }
-    @media (max-width: 768px) {
-      .chart-container { height: 280px; }
+    @media (max-width: 767px) {
+      .chart-container { height: 220px; }
+    }
+
+    /* Bottom Tab Bar */
+    .bottom-tab-bar {
+      position: fixed;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 40;
+      background: #fff;
+      border-top: 1px solid #e5e7eb;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+      height: 56px;
+      padding-bottom: var(--safe-bottom);
+    }
+    .bottom-tab-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      flex: 1;
+      padding: 4px 0;
+      color: #9ca3af;
+      font-size: 10px;
+      cursor: pointer;
+      transition: color 0.2s;
+      -webkit-tap-highlight-color: transparent;
+    }
+    .bottom-tab-item.active {
+      color: #1e40af;
+    }
+    .bottom-tab-item .tab-icon {
+      font-size: 20px;
+      line-height: 1;
+      margin-bottom: 2px;
+    }
+    @media (min-width: 768px) {
+      .bottom-tab-bar { display: none; }
+    }
+
+    /* Scrollbar hiding for horizontal scroll tabs */
+    .scroll-tabs {
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+      scrollbar-width: none;
+    }
+    .scroll-tabs::-webkit-scrollbar { display: none; }
+
+    /* Data table mobile optimization */
+    .data-table { font-size: 0.8125rem; }
+    .table-scroll-container {
+      position: relative;
+      overflow-x: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+    .table-scroll-container::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      width: 20px;
+      background: linear-gradient(to left, rgba(255,255,255,0.9), transparent);
+      pointer-events: none;
+      z-index: 1;
+    }
+    .table-scroll-container table .sticky-col {
+      position: sticky;
+      left: 0;
+      z-index: 2;
+      background: inherit;
+    }
+
+    /* Reading panel mobile full-screen */
+    @media (max-width: 767px) {
+      .reading-panel {
+        width: 100% !important;
+        max-width: 100% !important;
+      }
+      .reading-panel .panel-header {
+        padding-top: calc(12px + var(--safe-top));
+      }
     }
   </style>
 </head>
 <body class="bg-gray-50 min-h-screen">
 <div id="app" v-cloak>
-  <!-- Sidebar -->
+  <!-- Sidebar + Main wrapper -->
   <div class="flex min-h-screen">
-    <aside class="w-56 bg-white border-r border-gray-200 flex flex-col shrink-0 sticky top-0 h-screen overflow-y-auto">
+    <!-- Sidebar: hidden on mobile, visible on desktop -->
+    <aside class="w-56 bg-white border-r border-gray-200 hidden md:flex flex-col shrink-0 sticky top-0 h-screen overflow-y-auto">
       <div class="p-4 border-b border-gray-100">
         <h1 class="text-lg font-bold text-blue-800">📊 价值研究</h1>
         <p class="text-xs text-gray-400 mt-1">Value Investing Platform</p>
@@ -81,13 +173,13 @@
     </aside>
 
     <!-- Main Content -->
-    <main class="flex-1 overflow-y-auto">
+    <main class="flex-1 overflow-y-auto pb-16 md:pb-0">
       <!-- Home Page -->
-      <div v-if="page === 'home'" class="p-6">
-        <h2 class="text-2xl font-bold mb-6">公司总览</h2>
+      <div v-if="page === 'home'" class="px-4 py-4 md:p-6 page-transition">
+        <h2 class="text-2xl font-bold mb-4 md:mb-6">公司总览</h2>
         <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
           <div v-for="c in companies" :key="c.slug"
-               class="bg-white rounded-xl shadow-sm border border-gray-100 p-5 cursor-pointer hover:shadow-md transition-shadow"
+               class="bg-white rounded-xl shadow-sm border border-gray-100 p-4 md:p-5 cursor-pointer hover:shadow-md transition-shadow"
                @click="selectCompany(c.slug)">
             <div class="flex justify-between items-start mb-3">
               <div>
@@ -99,19 +191,19 @@
             <div class="grid grid-cols-2 gap-3 mt-3">
               <div>
                 <div class="text-xs text-gray-400">营收(亿)</div>
-                <div class="text-lg font-semibold">{{ fmt(c.latestRevenue) }}</div>
+                <div class="text-base md:text-lg font-semibold">{{ fmt(c.latestRevenue) }}</div>
               </div>
               <div>
                 <div class="text-xs text-gray-400">净利润(亿)</div>
-                <div class="text-lg font-semibold">{{ fmt(c.latestProfit) }}</div>
+                <div class="text-base md:text-lg font-semibold">{{ fmt(c.latestProfit) }}</div>
               </div>
               <div>
                 <div class="text-xs text-gray-400">ROE</div>
-                <div class="text-lg font-semibold" :style="{ color: c.latestROE > 15 ? 'var(--up)' : '' }">{{ fmt(c.latestROE) }}%</div>
+                <div class="text-base md:text-lg font-semibold" :style="{ color: c.latestROE > 15 ? 'var(--up)' : '' }">{{ fmt(c.latestROE) }}%</div>
               </div>
               <div>
                 <div class="text-xs text-gray-400">股息率</div>
-                <div class="text-lg font-semibold">{{ fmt(c.latestDividendYield) }}%</div>
+                <div class="text-base md:text-lg font-semibold">{{ fmt(c.latestDividendYield) }}%</div>
               </div>
             </div>
             <div class="text-xs text-gray-400 mt-3">最新: {{ c.latestPeriod }}</div>
@@ -120,16 +212,20 @@
       </div>
 
       <!-- Company Detail Page -->
-      <div v-if="page === 'company' && companyData" class="p-6">
-        <div class="flex items-center gap-3 mb-6">
-          <button @click="goTo('home')" class="text-blue-600 hover:underline text-sm">← 返回</button>
-          <h2 class="text-2xl font-bold">{{ companyData.profile.name }}</h2>
-          <span class="text-gray-500">{{ companyData.profile.ticker }}</span>
-          <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">{{ companyData.profile.industry }}</span>
+      <div v-if="page === 'company' && companyData" class="px-4 py-4 md:p-6 page-transition">
+        <!-- Mobile: vertical layout; Desktop: horizontal -->
+        <div class="mb-4 md:mb-6">
+          <button @click="goTo('home')" class="text-blue-600 hover:underline text-sm mb-2 md:hidden">← 返回总览</button>
+          <div class="flex items-center gap-3">
+            <button @click="goTo('home')" class="text-blue-600 hover:underline text-sm hidden md:inline">← 返回</button>
+            <h2 class="text-xl md:text-2xl font-bold">{{ companyData.profile.name }}</h2>
+            <span class="text-gray-500 text-sm md:text-base">{{ companyData.profile.ticker }}</span>
+            <span class="bg-gray-100 text-gray-600 text-xs px-2 py-1 rounded">{{ companyData.profile.industry }}</span>
+          </div>
         </div>
 
-        <!-- Tabs -->
-        <div class="flex gap-2 mb-6 flex-wrap">
+        <!-- Tabs: horizontal scrollable -->
+        <div class="scroll-tabs flex gap-2 mb-4 md:mb-6 flex-nowrap">
           <span class="tab-btn" :class="{ active: companyTab === 'dashboard' }" @click="companyTab='dashboard'">📊 仪表盘</span>
           <span class="tab-btn" :class="{ active: companyTab === 'profitability' }" @click="companyTab='profitability'">💰 盈利能力</span>
           <span class="tab-btn" :class="{ active: companyTab === 'cashflow' }" @click="companyTab='cashflow'">💵 现金流</span>
@@ -142,10 +238,10 @@
         <!-- Dashboard Tab -->
         <div v-if="companyTab === 'dashboard'">
           <!-- KPI Cards -->
-          <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-3 mb-6">
+          <div class="grid grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-2 md:gap-3 mb-4 md:mb-6">
             <div class="stat-card" v-for="kpi in dashboardKPIs" :key="kpi.label">
               <div class="text-xs text-gray-400 mb-1">{{ kpi.label }}</div>
-              <div class="text-xl font-bold" :style="{ color: kpi.color || '' }">{{ kpi.value }}</div>
+              <div class="text-base md:text-xl font-bold" :style="{ color: kpi.color || '' }">{{ kpi.value }}</div>
               <div v-if="kpi.change !== undefined" class="text-xs mt-1" :class="kpi.change >= 0 ? 'text-red-500' : 'text-green-600'">
                 {{ kpi.change >= 0 ? '↑' : '↓' }} {{ Math.abs(kpi.change).toFixed(1) }}%
               </div>
@@ -153,11 +249,11 @@
           </div>
           <!-- Revenue & Profit Chart -->
           <div class="grid grid-cols-1 xl:grid-cols-2 gap-4 mb-4">
-            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-3 md:p-4">
               <h3 class="text-sm font-semibold mb-2">营收与归母净利润趋势</h3>
               <div ref="chartRevenue" class="chart-container"></div>
             </div>
-            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-3 md:p-4">
               <h3 class="text-sm font-semibold mb-2">ROE / ROA / ROIC</h3>
               <div ref="chartROE" class="chart-container"></div>
             </div>
@@ -167,11 +263,11 @@
         <!-- Profitability Tab -->
         <div v-if="companyTab === 'profitability'">
           <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
-            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-3 md:p-4">
               <h3 class="text-sm font-semibold mb-2">利润率趋势</h3>
               <div ref="chartMargins" class="chart-container"></div>
             </div>
-            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-3 md:p-4">
               <h3 class="text-sm font-semibold mb-2">杜邦分解</h3>
               <div ref="chartDupont" class="chart-container"></div>
             </div>
@@ -181,11 +277,11 @@
         <!-- Cash Flow Tab -->
         <div v-if="companyTab === 'cashflow'">
           <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
-            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-3 md:p-4">
               <h3 class="text-sm font-semibold mb-2">经营现金流 / 资本开支 / 自由现金流</h3>
               <div ref="chartCashflow" class="chart-container"></div>
             </div>
-            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-3 md:p-4">
               <h3 class="text-sm font-semibold mb-2">现金流质量</h3>
               <div ref="chartCashQuality" class="chart-container"></div>
             </div>
@@ -195,11 +291,11 @@
         <!-- Leverage Tab -->
         <div v-if="companyTab === 'leverage'">
           <div class="grid grid-cols-1 xl:grid-cols-2 gap-4">
-            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-3 md:p-4">
               <h3 class="text-sm font-semibold mb-2">资产负债率与流动比率</h3>
               <div ref="chartLeverage" class="chart-container"></div>
             </div>
-            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+            <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-3 md:p-4">
               <h3 class="text-sm font-semibold mb-2">有息负债与债务/EBITDA</h3>
               <div ref="chartDebt" class="chart-container"></div>
             </div>
@@ -208,7 +304,7 @@
 
         <!-- Growth Tab -->
         <div v-if="companyTab === 'growth'">
-          <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+          <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-3 md:p-4">
             <h3 class="text-sm font-semibold mb-2">同比增长率</h3>
             <div ref="chartGrowth" class="chart-container"></div>
           </div>
@@ -216,7 +312,7 @@
 
         <!-- Valuation Tab -->
         <div v-if="companyTab === 'valuation'">
-          <div v-if="companyData.valuation" class="bg-white rounded-xl shadow-sm border border-gray-100 p-6">
+          <div v-if="companyData.valuation" class="bg-white rounded-xl shadow-sm border border-gray-100 p-4 md:p-6">
             <div class="markdown-body" v-html="renderMarkdown(companyData.valuation.raw || '暂无估值数据')"></div>
           </div>
           <div v-else class="text-gray-400 text-center py-12">暂无估值数据，请先运行 build_valuation_model.py</div>
@@ -224,67 +320,92 @@
 
         <!-- Data Table Tab -->
         <div v-if="companyTab === 'table'">
-          <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4 overflow-x-auto">
+          <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-3 md:p-4">
             <div class="flex gap-2 mb-3">
               <span class="tab-btn" :class="{ active: tableScope === 'annual' }" @click="tableScope='annual'">年度</span>
               <span class="tab-btn" :class="{ active: tableScope === 'full' }" @click="tableScope='full'">全期间</span>
             </div>
-            <table class="w-full text-xs">
-              <thead>
-                <tr class="bg-gray-50">
-                  <th class="sticky left-0 bg-gray-50 px-2 py-2 border text-left" v-for="col in tableColumns" :key="col">{{ col }}</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="(row, idx) in tableData" :key="idx" class="hover:bg-blue-50">
-                  <td class="px-2 py-1.5 border whitespace-nowrap" v-for="col in tableColumns" :key="col">
-                    {{ row[col] != null ? (typeof row[col] === 'number' ? row[col].toFixed(2) : row[col]) : '-' }}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+            <div class="table-scroll-container">
+              <table class="w-full data-table">
+                <thead>
+                  <tr class="bg-gray-50">
+                    <th v-for="(col, ci) in tableColumns" :key="col"
+                        class="px-2 py-2 border text-left text-xs font-semibold"
+                        :class="ci === 0 ? 'sticky-col bg-gray-50' : ''">{{ col }}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="(row, idx) in tableData" :key="idx" class="hover:bg-blue-50 bg-white">
+                    <td v-for="(col, ci) in tableColumns" :key="col"
+                        class="px-2 py-1.5 border whitespace-nowrap"
+                        :class="ci === 0 ? 'sticky-col bg-inherit font-medium' : ''">
+                      {{ row[col] != null ? (typeof row[col] === 'number' ? row[col].toFixed(2) : row[col]) : '-' }}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
           </div>
         </div>
       </div>
 
       <!-- Compare Page -->
-      <div v-if="page === 'compare'" class="p-6">
-        <h2 class="text-2xl font-bold mb-6">⚔️ 同行对比</h2>
+      <div v-if="page === 'compare'" class="px-4 py-4 md:p-6 page-transition">
+        <h2 class="text-2xl font-bold mb-4 md:mb-6">⚔️ 同行对比</h2>
         <div v-if="companies.length >= 2">
-          <!-- Comparison Table -->
-          <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4 overflow-x-auto mb-6">
-            <table class="w-full text-sm">
-              <thead>
-                <tr class="bg-gray-50">
-                  <th class="px-3 py-2 border text-left">指标</th>
-                  <th v-for="c in companies" :key="c.slug" class="px-3 py-2 border text-right">{{ c.name }}</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr v-for="metric in compareMetrics" :key="metric.key" class="hover:bg-blue-50">
-                  <td class="px-3 py-2 border font-medium">{{ metric.label }}</td>
-                  <td v-for="c in companies" :key="c.slug" class="px-3 py-2 border text-right"
-                      :class="metric.isBest && metric.isBest(c) ? 'text-blue-700 font-bold' : ''">
-                    {{ metric.format(c) }}
-                  </td>
-                </tr>
-              </tbody>
-            </table>
+          <!-- Comparison Table: desktop table, mobile cards -->
+          <div class="mb-6">
+            <!-- Desktop table -->
+            <div class="hidden md:block bg-white rounded-xl shadow-sm border border-gray-100 p-4 overflow-x-auto">
+              <table class="w-full text-sm">
+                <thead>
+                  <tr class="bg-gray-50">
+                    <th class="px-3 py-2 border text-left">指标</th>
+                    <th v-for="c in companies" :key="c.slug" class="px-3 py-2 border text-right">{{ c.name }}</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr v-for="metric in compareMetrics" :key="metric.key" class="hover:bg-blue-50">
+                    <td class="px-3 py-2 border font-medium">{{ metric.label }}</td>
+                    <td v-for="c in companies" :key="c.slug" class="px-3 py-2 border text-right"
+                        :class="metric.isBest && metric.isBest(c) ? 'text-blue-700 font-bold' : ''">
+                      {{ metric.format(c) }}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <!-- Mobile cards -->
+            <div class="md:hidden space-y-3">
+              <div v-for="metric in compareMetrics" :key="metric.key"
+                   class="bg-white rounded-xl border border-gray-100 p-3">
+                <div class="text-xs text-gray-400 mb-2">{{ metric.label }}</div>
+                <div class="space-y-1.5">
+                  <div v-for="c in companies" :key="c.slug" class="flex justify-between items-center">
+                    <span class="text-sm">{{ c.name }}</span>
+                    <span class="text-sm font-medium"
+                          :class="metric.isBest && metric.isBest(c) ? 'text-blue-700 font-bold' : ''">
+                      {{ metric.format(c) }}
+                    </span>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
           <!-- Radar Chart -->
-          <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-4">
+          <div class="bg-white rounded-xl shadow-sm border border-gray-100 p-3 md:p-4">
             <h3 class="text-sm font-semibold mb-2">核心指标雷达图</h3>
-            <div ref="chartRadar" class="chart-container" style="height: 450px;"></div>
+            <div ref="chartRadar" class="chart-container" :style="{ height: isMobile() ? '300px' : '450px' }"></div>
           </div>
         </div>
         <div v-else class="text-gray-400 text-center py-12">需要至少 2 家公司数据才能做对比</div>
       </div>
 
       <!-- Buffett Page -->
-      <div v-if="page === 'buffett'" class="p-6">
-        <h2 class="text-2xl font-bold mb-6">📚 巴菲特文集</h2>
+      <div v-if="page === 'buffett'" class="px-4 py-4 md:p-6 page-transition">
+        <h2 class="text-2xl font-bold mb-4 md:mb-6">📚 巴菲特文集</h2>
 
-        <div class="flex gap-2 mb-6 flex-wrap">
+        <div class="scroll-tabs flex gap-2 mb-4 md:mb-6 flex-nowrap">
           <span class="tab-btn" :class="{ active: buffettTab === 'overview' }" @click="buffettTab='overview'">📖 总览</span>
           <span class="tab-btn" :class="{ active: buffettTab === 'quotes' }" @click="buffettTab='quotes'">💎 金句</span>
           <span class="tab-btn" :class="{ active: buffettTab === 'themes' }" @click="buffettTab='themes'">🧠 主题索引</span>
@@ -292,13 +413,13 @@
 
         <!-- Overview -->
         <div v-if="buffettTab === 'overview'">
-          <div v-for="cat in buffettCategories" :key="cat.id" class="mb-6">
+          <div v-for="cat in buffettCategories" :key="cat.id" class="mb-4 md:mb-6">
             <h3 class="text-lg font-semibold mb-3">{{ cat.name }} <span class="text-sm text-gray-400">({{ cat.count }}篇)</span></h3>
-            <div class="grid grid-cols-2 md:grid-cols-4 xl:grid-cols-6 gap-2">
+            <div class="grid grid-cols-3 md:grid-cols-4 xl:grid-cols-6 gap-2">
               <div v-for="item in cat.items" :key="item.file"
-                   class="bg-white rounded-lg border border-gray-100 px-3 py-2 text-sm hover:border-blue-300 cursor-pointer transition-colors"
+                   class="bg-white rounded-lg border border-gray-100 px-2 py-2 md:px-3 text-sm hover:border-blue-300 cursor-pointer transition-colors"
                    @click="openBuffettItem(item)">
-                <div class="font-medium">{{ item.year || item.name }}</div>
+                <div class="font-medium text-xs md:text-sm">{{ item.year || item.name }}</div>
                 <div class="text-xs text-gray-400">{{ (item.size / 1024).toFixed(0) }}KB</div>
               </div>
             </div>
@@ -313,12 +434,12 @@
           </div>
           <div class="space-y-3">
             <div v-for="q in filteredQuotes" :key="q.year + q.text"
-                 class="bg-white rounded-xl border border-gray-100 p-4">
+                 class="bg-white rounded-xl border border-gray-100 p-3 md:p-4">
               <div class="flex justify-between items-start mb-2">
                 <span class="bg-blue-50 text-blue-700 text-xs px-2 py-0.5 rounded">{{ q.year }}</span>
                 <span class="text-xs text-gray-400">{{ q.source }}</span>
               </div>
-              <p class="text-gray-700 leading-relaxed">{{ q.text }}</p>
+              <p class="text-gray-700 leading-relaxed text-sm md:text-base">{{ q.text }}</p>
             </div>
           </div>
           <div v-if="filteredQuotes.length === 0" class="text-center text-gray-400 py-8">没有匹配的金句</div>
@@ -328,7 +449,7 @@
         <div v-if="buffettTab === 'themes'">
           <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
             <div v-for="t in buffettThemes" :key="t.id"
-                 class="bg-white rounded-xl border border-gray-100 p-5 hover:shadow-md transition-shadow cursor-pointer">
+                 class="bg-white rounded-xl border border-gray-100 p-4 md:p-5 hover:shadow-md transition-shadow cursor-pointer">
               <h3 class="text-lg font-semibold mb-2">{{ t.name }}</h3>
               <p class="text-sm text-gray-500 mb-2">{{ t.preview }}</p>
               <span class="text-xs text-gray-400">{{ t.entryCount }} 条段落</span>
@@ -338,25 +459,28 @@
 
         <!-- Reading Panel -->
         <div v-if="buffettReading" class="fixed inset-0 bg-black/40 z-50 flex justify-end" @click.self="buffettReading=null">
-          <div class="w-full max-w-3xl bg-white h-full overflow-y-auto shadow-2xl">
-            <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-3 flex justify-between items-center z-10">
-              <h3 class="font-semibold">{{ buffettReadingTitle }}</h3>
-              <button @click="buffettReading=null" class="text-gray-400 hover:text-gray-700 text-xl">✕</button>
+          <div class="reading-panel w-full max-w-3xl bg-white h-full overflow-y-auto shadow-2xl">
+            <div class="panel-header sticky top-0 bg-white border-b border-gray-200 px-4 md:px-6 py-3 flex justify-between items-center z-10">
+              <div class="flex items-center gap-3">
+                <button @click="buffettReading=null" class="md:hidden text-blue-600 text-sm">← 返回</button>
+                <h3 class="font-semibold text-sm md:text-base truncate">{{ buffettReadingTitle }}</h3>
+              </div>
+              <button @click="buffettReading=null" class="hidden md:block text-gray-400 hover:text-gray-700 text-xl">✕</button>
             </div>
-            <div class="p-6 markdown-body" v-html="renderMarkdown(buffettReading)"></div>
+            <div class="p-4 md:p-6 markdown-body" v-html="renderMarkdown(buffettReading)"></div>
           </div>
         </div>
       </div>
 
       <!-- Notes Page -->
-      <div v-if="page === 'notes'" class="p-6">
-        <h2 class="text-2xl font-bold mb-6">📝 研究笔记</h2>
+      <div v-if="page === 'notes'" class="px-4 py-4 md:p-6 page-transition">
+        <h2 class="text-2xl font-bold mb-4 md:mb-6">📝 研究笔记</h2>
         <div class="space-y-4">
           <div v-for="c in companies" :key="c.slug">
             <h3 class="text-lg font-semibold mb-3">{{ c.name }}</h3>
             <div v-if="companyNotes[c.slug] && companyNotes[c.slug].length > 0" class="grid grid-cols-1 md:grid-cols-2 gap-3">
               <div v-for="note in companyNotes[c.slug]" :key="note.file"
-                   class="bg-white rounded-xl border border-gray-100 p-4 cursor-pointer hover:shadow-md transition-shadow"
+                   class="bg-white rounded-xl border border-gray-100 p-3 md:p-4 cursor-pointer hover:shadow-md transition-shadow"
                    @click="openNote(c.slug, note)">
                 <h4 class="font-medium mb-1">{{ note.title }}</h4>
                 <p class="text-xs text-gray-400">{{ (note.size / 1024).toFixed(1) }} KB</p>
@@ -369,12 +493,15 @@
 
         <!-- Note Reading Panel -->
         <div v-if="noteReading" class="fixed inset-0 bg-black/40 z-50 flex justify-end" @click.self="noteReading=null">
-          <div class="w-full max-w-3xl bg-white h-full overflow-y-auto shadow-2xl">
-            <div class="sticky top-0 bg-white border-b border-gray-200 px-6 py-3 flex justify-between items-center z-10">
-              <h3 class="font-semibold">{{ noteReadingTitle }}</h3>
-              <button @click="noteReading=null" class="text-gray-400 hover:text-gray-700 text-xl">✕</button>
+          <div class="reading-panel w-full max-w-3xl bg-white h-full overflow-y-auto shadow-2xl">
+            <div class="panel-header sticky top-0 bg-white border-b border-gray-200 px-4 md:px-6 py-3 flex justify-between items-center z-10">
+              <div class="flex items-center gap-3">
+                <button @click="noteReading=null" class="md:hidden text-blue-600 text-sm">← 返回</button>
+                <h3 class="font-semibold text-sm md:text-base truncate">{{ noteReadingTitle }}</h3>
+              </div>
+              <button @click="noteReading=null" class="hidden md:block text-gray-400 hover:text-gray-700 text-xl">✕</button>
             </div>
-            <div class="p-6 markdown-body" v-html="renderMarkdown(noteReading)"></div>
+            <div class="p-4 md:p-6 markdown-body" v-html="renderMarkdown(noteReading)"></div>
           </div>
         </div>
       </div>
@@ -388,12 +515,53 @@
       </div>
     </main>
   </div>
+
+  <!-- Bottom Tab Bar (Mobile only) -->
+  <div class="bottom-tab-bar">
+    <div class="bottom-tab-item" :class="{ active: page === 'home' }" @click="goTo('home')">
+      <span class="tab-icon">🏠</span>
+      <span>首页</span>
+    </div>
+    <div class="bottom-tab-item" :class="{ active: page === 'compare' }" @click="goTo('compare')">
+      <span class="tab-icon">⚔️</span>
+      <span>对比</span>
+    </div>
+    <div class="bottom-tab-item" :class="{ active: page === 'company' }" @click="page === 'company' ? null : (companies.length > 0 && selectCompany(companies[0].slug))">
+      <span class="tab-icon">📊</span>
+      <span>详情</span>
+    </div>
+    <div class="bottom-tab-item" :class="{ active: page === 'buffett' }" @click="goTo('buffett')">
+      <span class="tab-icon">📚</span>
+      <span>巴菲特</span>
+    </div>
+    <div class="bottom-tab-item" :class="{ active: page === 'notes' }" @click="goTo('notes')">
+      <span class="tab-icon">📝</span>
+      <span>笔记</span>
+    </div>
+  </div>
 </div>
 
 <script>
 const { createApp, ref, computed, watch, onMounted, nextTick } = Vue;
 
 const BASE = './data';
+
+// Mobile detection helper
+function isMobile() { return window.innerWidth < 768; }
+
+// Responsive chart grid configs
+function mobileGrid() {
+  return { top: 30, bottom: 25, left: 40, right: 15 };
+}
+function desktopGrid(opts = {}) {
+  return { top: 40, bottom: 30, left: 60, right: opts.right || 20 };
+}
+function responsiveGrid(opts = {}) {
+  return isMobile() ? mobileGrid() : desktopGrid(opts);
+}
+function responsiveLegend() {
+  return isMobile() ? { top: 0, textStyle: { fontSize: 10 } } : { top: 0 };
+}
 
 async function fetchJSON(path) {
   try {
@@ -496,7 +664,6 @@ createApp({
         { key: 'latestDividendYield', label: '股息率(%)', format: c => fmt(c.latestDividendYield), higher: true },
       ];
 
-      // Add more metrics from loaded ratios
       for (const c of companies.value) {
         if (c._latestRatios) {
           const extraKeys = ['毛利率(%)', '净利率(%)', 'ROIC(%)', '资产负债率(%)', '经营现金流/净利润', '自由现金流(亿元)'];
@@ -514,7 +681,6 @@ createApp({
         }
       }
 
-      // Add isBest
       for (const m of metrics) {
         m.isBest = (c) => {
           const vals = companies.value.map(x => m.format(x)).map(Number).filter(n => !isNaN(n));
@@ -568,12 +734,12 @@ createApp({
         chartInstances.revenue = c;
         c.setOption({
           tooltip: { trigger: 'axis' },
-          legend: { top: 0 },
-          grid: { top: 40, bottom: 30, left: 60, right: 60 },
+          legend: responsiveLegend(),
+          grid: responsiveGrid({ right: 60 }),
           xAxis: { type: 'category', data: years },
           yAxis: [
-            { type: 'value', name: '亿元', position: 'left' },
-            { type: 'value', name: '亿元', position: 'right' }
+            { type: 'value', name: isMobile() ? '' : '亿元', position: 'left' },
+            { type: 'value', name: isMobile() ? '' : '亿元', position: 'right' }
           ],
           series: [
             { name: '营收', type: 'bar', data: g('营收(亿元)'), itemStyle: { color: '#4C78A8' }, yAxisIndex: 0 },
@@ -588,10 +754,10 @@ createApp({
         chartInstances.roe = c;
         c.setOption({
           tooltip: { trigger: 'axis', valueFormatter: v => v?.toFixed(2) + '%' },
-          legend: { top: 0 },
-          grid: { top: 40, bottom: 30, left: 60, right: 20 },
+          legend: responsiveLegend(),
+          grid: responsiveGrid(),
           xAxis: { type: 'category', data: years },
-          yAxis: { type: 'value', name: '%' },
+          yAxis: { type: 'value', name: isMobile() ? '' : '%' },
           series: [
             { name: 'ROE', type: 'line', data: g('ROE(%)'), itemStyle: { color: '#E45756' }, smooth: true },
             { name: 'ROA', type: 'line', data: g('ROA(%)'), itemStyle: { color: '#4C78A8' }, smooth: true },
@@ -617,10 +783,10 @@ createApp({
           chartInstances.margins = c;
           c.setOption({
             tooltip: { trigger: 'axis', valueFormatter: v => v?.toFixed(2) + '%' },
-            legend: { top: 0 },
-            grid: { top: 40, bottom: 30, left: 60, right: 20 },
+            legend: responsiveLegend(),
+            grid: responsiveGrid(),
             xAxis: { type: 'category', data: years },
-            yAxis: { type: 'value', name: '%' },
+            yAxis: { type: 'value', name: isMobile() ? '' : '%' },
             series: [
               { name: '毛利率', type: 'line', data: g('毛利率(%)'), smooth: true },
               { name: '营业利润率', type: 'line', data: g('营业利润率(%)'), smooth: true },
@@ -637,12 +803,12 @@ createApp({
           chartInstances.dupont = c;
           c.setOption({
             tooltip: { trigger: 'axis' },
-            legend: { top: 0 },
-            grid: { top: 40, bottom: 30, left: 60, right: 60 },
+            legend: responsiveLegend(),
+            grid: responsiveGrid({ right: 60 }),
             xAxis: { type: 'category', data: years },
             yAxis: [
-              { type: 'value', name: '%/倍' },
-              { type: 'value', name: '倍', position: 'right' }
+              { type: 'value', name: isMobile() ? '' : '%/倍' },
+              { type: 'value', name: isMobile() ? '' : '倍', position: 'right' }
             ],
             series: [
               { name: '净利率(%)', type: 'line', data: g('净利率(%)'), smooth: true, yAxisIndex: 0 },
@@ -659,10 +825,10 @@ createApp({
           chartInstances.cashflow = c;
           c.setOption({
             tooltip: { trigger: 'axis' },
-            legend: { top: 0 },
-            grid: { top: 40, bottom: 30, left: 60, right: 20 },
+            legend: responsiveLegend(),
+            grid: responsiveGrid(),
             xAxis: { type: 'category', data: years },
-            yAxis: { type: 'value', name: '亿元' },
+            yAxis: { type: 'value', name: isMobile() ? '' : '亿元' },
             series: [
               { name: '经营现金流', type: 'bar', data: g('经营现金流(亿元)'), itemStyle: { color: '#59A14F' } },
               { name: '资本开支', type: 'bar', data: g('资本开支(亿元)'), itemStyle: { color: '#F28E2B' } },
@@ -678,12 +844,12 @@ createApp({
           chartInstances.cashQuality = c;
           c.setOption({
             tooltip: { trigger: 'axis' },
-            legend: { top: 0 },
-            grid: { top: 40, bottom: 30, left: 60, right: 60 },
+            legend: responsiveLegend(),
+            grid: responsiveGrid({ right: 60 }),
             xAxis: { type: 'category', data: years },
             yAxis: [
-              { type: 'value', name: '倍' },
-              { type: 'value', name: '%', position: 'right' }
+              { type: 'value', name: isMobile() ? '' : '倍' },
+              { type: 'value', name: isMobile() ? '' : '%', position: 'right' }
             ],
             series: [
               { name: '经营现金流/净利润', type: 'line', data: g('经营现金流/净利润'), smooth: true, yAxisIndex: 0 },
@@ -700,12 +866,12 @@ createApp({
           chartInstances.leverage = c;
           c.setOption({
             tooltip: { trigger: 'axis' },
-            legend: { top: 0 },
-            grid: { top: 40, bottom: 30, left: 60, right: 60 },
+            legend: responsiveLegend(),
+            grid: responsiveGrid({ right: 60 }),
             xAxis: { type: 'category', data: years },
             yAxis: [
-              { type: 'value', name: '%' },
-              { type: 'value', name: '倍', position: 'right' }
+              { type: 'value', name: isMobile() ? '' : '%' },
+              { type: 'value', name: isMobile() ? '' : '倍', position: 'right' }
             ],
             series: [
               { name: '资产负债率(%)', type: 'line', data: g('资产负债率(%)'), smooth: true, yAxisIndex: 0, itemStyle: { color: '#4E79A7' } },
@@ -722,12 +888,12 @@ createApp({
           chartInstances.debt = c;
           c.setOption({
             tooltip: { trigger: 'axis' },
-            legend: { top: 0 },
-            grid: { top: 40, bottom: 30, left: 60, right: 60 },
+            legend: responsiveLegend(),
+            grid: responsiveGrid({ right: 60 }),
             xAxis: { type: 'category', data: years },
             yAxis: [
-              { type: 'value', name: '亿元' },
-              { type: 'value', name: '倍', position: 'right' }
+              { type: 'value', name: isMobile() ? '' : '亿元' },
+              { type: 'value', name: isMobile() ? '' : '倍', position: 'right' }
             ],
             series: [
               { name: '有息负债(亿)', type: 'bar', data: g('有息负债(亿元)'), itemStyle: { color: '#F28E2B' }, yAxisIndex: 0 },
@@ -743,10 +909,10 @@ createApp({
           chartInstances.growth = c;
           c.setOption({
             tooltip: { trigger: 'axis', valueFormatter: v => v?.toFixed(2) + '%' },
-            legend: { top: 0 },
-            grid: { top: 40, bottom: 30, left: 60, right: 20 },
+            legend: responsiveLegend(),
+            grid: responsiveGrid(),
             xAxis: { type: 'category', data: years },
-            yAxis: { type: 'value', name: '%' },
+            yAxis: { type: 'value', name: isMobile() ? '' : '%' },
             series: [
               { name: '营收同比', type: 'bar', data: g('营收同比(%)'), itemStyle: { color: '#4C78A8' } },
               { name: '归母净利润同比', type: 'bar', data: g('归母净利润同比(%)'), itemStyle: { color: '#E45756' } },
@@ -760,7 +926,6 @@ createApp({
     async function renderCompareCharts() {
       if (!chartRadar.value || companies.value.length < 2) return;
 
-      // Load ratio data for all companies
       const allRatios = {};
       for (const c of companies.value) {
         const ratios = await fetchJSON(`${c.slug}/ratios.json`);
@@ -786,10 +951,11 @@ createApp({
 
       chart.setOption({
         tooltip: {},
-        legend: { top: 0, data: companies.value.map(c => c.name) },
+        legend: { top: 0, data: companies.value.map(c => c.name), textStyle: { fontSize: isMobile() ? 10 : 12 } },
         radar: {
           indicator: radarMetrics.map(m => ({ name: m.name, max: m.max })),
-          shape: 'polygon'
+          shape: 'polygon',
+          radius: isMobile() ? '55%' : '65%'
         },
         series: [{
           type: 'radar',
@@ -829,13 +995,11 @@ createApp({
     onMounted(async () => {
       companies.value = (await fetchJSON('companies.json')) || [];
 
-      // Load notes for each company
       for (const c of companies.value) {
         const notes = await fetchJSON(`${c.slug}/notes.json`);
         companyNotes.value[c.slug] = notes || [];
       }
 
-      // Load Buffett data
       buffettCategories.value = (await fetchJSON('buffett/index.json')) || [];
       buffettQuotes.value = (await fetchJSON('buffett/quotes.json')) || [];
       buffettThemes.value = (await fetchJSON('buffett/themes.json')) || [];
@@ -843,9 +1007,19 @@ createApp({
       loading.value = false;
     });
 
-    // Handle window resize for charts
+    // Handle window resize: resize charts + re-render for grid config changes
+    let resizeTimer;
     window.addEventListener('resize', () => {
       Object.values(chartInstances).forEach(c => c?.resize?.());
+      clearTimeout(resizeTimer);
+      resizeTimer = setTimeout(() => {
+        // Re-render charts on breakpoint crossing to update grid/legend configs
+        if (page.value === 'company' && companyData.value) {
+          renderCompanyCharts();
+        } else if (page.value === 'compare') {
+          renderCompareCharts();
+        }
+      }, 300);
     });
 
     return {
@@ -857,6 +1031,7 @@ createApp({
       chartCashflow, chartCashQuality, chartLeverage, chartDebt, chartGrowth, chartRadar,
       dashboardKPIs, filteredQuotes, tableData, tableColumns, compareMetrics,
       fmt, renderMarkdown, goTo, selectCompany, openBuffettItem, openNote,
+      isMobile,
     };
   }
 }).mount('#app');
