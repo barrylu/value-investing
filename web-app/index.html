@@ -131,6 +131,14 @@
       background: inherit;
     }
 
+    /* Reading panel slide animation */
+    .reading-panel {
+      transition: transform 0.3s cubic-bezier(0.2, 0, 0, 1);
+    }
+    .reading-panel.swiping {
+      transition: none;
+    }
+
     /* Reading panel mobile full-screen */
     @media (max-width: 767px) {
       .reading-panel {
@@ -458,8 +466,12 @@
         </div>
 
         <!-- Reading Panel -->
-        <div v-if="buffettReading" class="fixed inset-0 bg-black/40 z-50 flex justify-end" @click.self="buffettReading=null">
-          <div class="reading-panel w-full max-w-3xl bg-white h-full overflow-y-auto shadow-2xl">
+        <div v-if="buffettReading" class="fixed inset-0 bg-black/40 z-50 flex justify-end"
+             :style="{ opacity: swipeOverlayOpacity }" @click.self="buffettReading=null">
+          <div class="reading-panel w-full max-w-3xl bg-white h-full overflow-y-auto shadow-2xl"
+               :class="{ swiping: isSwiping }"
+               :style="{ transform: swipeTransform }"
+               @touchstart="onSwipeStart" @touchmove="onSwipeMove" @touchend="onSwipeEnd('buffett')">
             <div class="panel-header sticky top-0 bg-white border-b border-gray-200 px-4 md:px-6 py-3 flex justify-between items-center z-10">
               <div class="flex items-center gap-3">
                 <button @click="buffettReading=null" class="md:hidden text-blue-600 text-sm">← 返回</button>
@@ -492,8 +504,12 @@
         </div>
 
         <!-- Note Reading Panel -->
-        <div v-if="noteReading" class="fixed inset-0 bg-black/40 z-50 flex justify-end" @click.self="noteReading=null">
-          <div class="reading-panel w-full max-w-3xl bg-white h-full overflow-y-auto shadow-2xl">
+        <div v-if="noteReading" class="fixed inset-0 bg-black/40 z-50 flex justify-end"
+             :style="{ opacity: swipeOverlayOpacity }" @click.self="noteReading=null">
+          <div class="reading-panel w-full max-w-3xl bg-white h-full overflow-y-auto shadow-2xl"
+               :class="{ swiping: isSwiping }"
+               :style="{ transform: swipeTransform }"
+               @touchstart="onSwipeStart" @touchmove="onSwipeMove" @touchend="onSwipeEnd('note')">
             <div class="panel-header sticky top-0 bg-white border-b border-gray-200 px-4 md:px-6 py-3 flex justify-between items-center z-10">
               <div class="flex items-center gap-3">
                 <button @click="noteReading=null" class="md:hidden text-blue-600 text-sm">← 返回</button>
@@ -608,6 +624,80 @@ createApp({
     const chartRadar = ref(null);
 
     let chartInstances = {};
+
+    // Swipe-back gesture state
+    const swipeX = ref(0);
+    const isSwiping = ref(false);
+    let swipeStartX = 0;
+    let swipeStartY = 0;
+    let swipeLocked = false; // locked to horizontal or rejected
+
+    const swipeTransform = computed(() => {
+      return swipeX.value > 0 ? `translateX(${swipeX.value}px)` : '';
+    });
+    const swipeOverlayOpacity = computed(() => {
+      if (swipeX.value <= 0) return 1;
+      const progress = Math.min(swipeX.value / (window.innerWidth * 0.4), 1);
+      return 1 - progress * 0.6;
+    });
+
+    function onSwipeStart(e) {
+      const touch = e.touches[0];
+      // Only activate if touch starts within 30px of left edge
+      if (touch.clientX > 30) return;
+      swipeStartX = touch.clientX;
+      swipeStartY = touch.clientY;
+      swipeX.value = 0;
+      isSwiping.value = false;
+      swipeLocked = false;
+    }
+
+    function onSwipeMove(e) {
+      if (!swipeStartX) return;
+      const touch = e.touches[0];
+      const dx = touch.clientX - swipeStartX;
+      const dy = touch.clientY - swipeStartY;
+
+      // Determine direction on first significant move
+      if (!swipeLocked && !isSwiping.value) {
+        if (Math.abs(dx) < 8 && Math.abs(dy) < 8) return; // dead zone
+        if (Math.abs(dy) > Math.abs(dx)) {
+          // Vertical scroll — abort swipe
+          swipeStartX = 0;
+          return;
+        }
+        // Horizontal — lock into swipe mode
+        swipeLocked = true;
+        isSwiping.value = true;
+      }
+
+      if (isSwiping.value && dx > 0) {
+        swipeX.value = dx;
+        e.preventDefault(); // prevent scroll while swiping
+      }
+    }
+
+    function onSwipeEnd(type) {
+      const threshold = window.innerWidth * 0.3;
+      const shouldClose = swipeX.value > threshold;
+
+      if (shouldClose) {
+        // Animate off screen then close
+        isSwiping.value = false;
+        swipeX.value = window.innerWidth;
+        setTimeout(() => {
+          if (type === 'buffett') buffettReading.value = null;
+          else if (type === 'note') noteReading.value = null;
+          swipeX.value = 0;
+        }, 300);
+      } else {
+        // Snap back
+        isSwiping.value = false;
+        swipeX.value = 0;
+      }
+      swipeStartX = 0;
+      swipeLocked = false;
+    }
 
     const fmt = (v, d = 2) => v != null ? Number(v).toFixed(d) : '-';
 
@@ -1031,6 +1121,8 @@ createApp({
       chartCashflow, chartCashQuality, chartLeverage, chartDebt, chartGrowth, chartRadar,
       dashboardKPIs, filteredQuotes, tableData, tableColumns, compareMetrics,
       fmt, renderMarkdown, goTo, selectCompany, openBuffettItem, openNote,
+      swipeX, isSwiping, swipeTransform, swipeOverlayOpacity,
+      onSwipeStart, onSwipeMove, onSwipeEnd,
       isMobile,
     };
   }
